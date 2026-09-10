@@ -277,7 +277,7 @@ p { margin: 0; }
   border-bottom: 1px solid var(--rule-soft);
 }
 .entry .stamp { display: flex; flex-direction: column; gap: 7px; }
-.entry .date {
+.entry .date, .entry-date {
   font-family: var(--f-mono);
   font-size: .82rem;
   color: var(--ink);
@@ -296,22 +296,22 @@ p { margin: 0; }
 }
 .tag.court { border-color: var(--accent); color: var(--accent); }
 .entry h3 { font-family: var(--f-display); font-weight: 600; font-size: 1.24rem; }
-.entry .cite {
+.cite {
   font-family: var(--f-mono);
   font-size: .8rem;
   color: var(--ink-muted);
   margin-top: 6px;
   overflow-wrap: anywhere;
 }
-.entry .summary { margin-top: 12px; color: var(--ink); }
-.entry .takeaway {
+.summary { margin-top: 12px; color: var(--ink); }
+.takeaway {
   margin-top: 14px;
   padding-left: 16px;
   border-left: 2px solid var(--rule);
   font-size: .94rem;
   color: var(--ink-muted);
 }
-.entry .takeaway b {
+.takeaway b {
   font-family: var(--f-mono);
   font-size: .68rem;
   letter-spacing: .1em;
@@ -323,6 +323,62 @@ p { margin: 0; }
 @media (max-width: 720px) {
   .entry { grid-template-columns: 1fr; gap: 10px; }
   .entry .stamp { flex-direction: row; align-items: center; gap: 12px; }
+}
+
+/* ---------- entry links, archive, entry pages ---------- */
+
+.entry h3 a.entry-link { color: var(--ink); text-decoration: none; }
+.entry h3 a.entry-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.page-head .eyebrow a { color: var(--ink-muted); text-decoration: none; }
+.page-head .eyebrow a:hover { color: var(--accent); }
+
+.arch-year {
+  font-family: var(--f-mono);
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin: 36px 0 4px;
+  border: 0;
+}
+.arch-year:first-child { margin-top: 8px; }
+
+.arch-row {
+  display: grid;
+  grid-template-columns: 6.4rem 8rem minmax(0, 1fr);
+  gap: 6px 20px;
+  align-items: baseline;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.arch-row .date {
+  font-family: var(--f-mono);
+  font-size: .78rem;
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+.arch-row .tag { justify-self: start; }
+.arch-row a { color: var(--ink); text-decoration: none; }
+.arch-row a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 720px) {
+  .arch-row { grid-template-columns: 1fr; gap: 8px; }
+  .arch-row .date, .arch-row .tag { display: inline-block; margin-right: 10px; }
+}
+
+.entry-nav {
+  display: grid;
+  gap: 12px;
+  max-width: var(--measure);
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule-soft);
+  font-size: .92rem;
 }
 
 /* ---------- contact ---------- */
