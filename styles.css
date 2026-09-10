@@ -191,6 +191,27 @@ p { margin: 0; }
 .row .detail { margin-top: .7em; }
 @media (max-width: 720px) { .row { grid-template-columns: 1fr; gap: 6px; } }
 
+/* ---------- biography with portrait ---------- */
+
+.bio {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 44px;
+  align-items: start;
+}
+.portrait { margin: 0; width: 240px; max-width: 100%; }
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+@media (max-width: 760px) {
+  .bio { grid-template-columns: 1fr; gap: 26px; }
+  .portrait { order: -1; width: 186px; }
+}
+
 /* ---------- client roster ---------- */
 
 .roster {
