@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-09",
-  "note": "Developments in United States and European patent law affecting software and artificial intelligence inventions. Newest first.",
+  "updated": "2026-09-10",
+  "note": "Developments in United States, European and Asian patent law affecting software and artificial intelligence inventions, together with the regulation and policy that shapes what clients can build and ship. Newest first.",
   "entries": [
     {
       "date": "2026-07-14",
@@ -21,6 +21,15 @@
       "takeaway": "Accuracy and speed figures do not rescue a claim. What survives is a claimed technical mechanism \u2014 a specific architecture, a specific training-data construction, a specific way the model is integrated with the rest of the system \u2014 written into the specification before filing, not argued for the first time in a response."
     },
     {
+      "date": "2026-05-13",
+      "tag": "EU Policy",
+      "court": false,
+      "title": "European Union delays its high-risk artificial intelligence obligations by sixteen months",
+      "cite": "Digital AI Omnibus \u2014 provisional political agreement 6 May 2026, confirmed by Member State representatives 13 May 2026, amending Regulation (EU) 2024/1689 (the Artificial Intelligence Act)",
+      "summary": "Obligations for stand-alone high-risk artificial intelligence systems listed in Annex III move from 2 August 2026 to 2 December 2027. Obligations for artificial intelligence embedded in regulated products under Annex I move from 2 August 2027 to 2 August 2028. The core transparency obligations under Article 50 still take effect on 2 August 2026, with a watermarking grace period for existing systems running to 2 December 2026. The Article 5 prohibitions were expanded, and the deadline for Member States to establish regulatory sandboxes moved to 2 August 2027.",
+      "takeaway": "This is a compliance timetable rather than a patent rule, and it still moves filing dates. A client who was holding a European launch until the high-risk obligations landed now has sixteen more months of roadmap. Filings have to be on file covering what ships, so the launch date moving moves the filing plan with it."
+    },
+    {
       "date": "2026-03-17",
       "tag": "EPO",
       "court": false,
@@ -37,6 +46,15 @@
       "cite": "Rensselaer Polytechnic Institute v. Amazon.com, Inc., No. 24-1725 (Fed. Cir. Feb. 24, 2026) (Dyk, J.); U.S. Pat. No. 7,177,798",
       "summary": "The patent claimed a method of processing natural language input using case-based reasoning, a machine learning technique that resolves ambiguity by drawing on stored historical examples in a metadata database. The Federal Circuit affirmed ineligibility, holding that generic use of artificial intelligence without other parameters is abstract, and that a conventional application of case-based reasoning, even to a novel environment, does not become eligible because the environment is new. The specification's own description of the database elements as well known in the art was used against the patentee at step two.",
       "takeaway": "Background sections that concede prior-art status get quoted back at step two. Describe what is conventional at the level of generality the claims do not depend on, and reserve the detailed description for the parts of the system that are actually new."
+    },
+    {
+      "date": "2026-01-01",
+      "tag": "CNIPA",
+      "court": false,
+      "title": "China raises the inventiveness bar for artificial intelligence patents",
+      "cite": "Amended Patent Examination Guidelines, China National Intellectual Property Administration Order No. 84, issued 10 November 2025, effective 1 January 2026",
+      "summary": "The amended guidelines state that changing only the application scenario or the target object of an existing artificial intelligence algorithm does not establish an inventive step. An applicant must show meaningful changes to model structure, parameters, training methods or technical effects. Disclosure requirements were tightened at the same time: a specification must describe the model architecture including modules, layers and connections, the training steps and key parameters, and the technical relationship between the input and the output data. Examiners may examine the description alongside the claims. The guidelines also permit rejection on public policy grounds where an invention involves unlawful collection or use of personal data, or algorithmic decision-making on discriminatory criteria.",
+      "takeaway": "China has arrived at the Federal Circuit's central point from the opposite direction. Applying a known model to a new field is not enough in either country. For a family filed in the United States, Europe and China, the model architecture and the training description have to sit in the priority document, because none of the three offices will let that material be added afterwards."
     },
     {
       "date": "2025-11-28",
