@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disclaimer — Burbage Law</title>
+<meta name="description" content="Website disclaimer for Burbage Law, PC.">
+<link rel="canonical" href="https://burbagelaw.com/disclaimer.html">
+<meta property="og:title" content="Disclaimer — Burbage Law">
+<meta property="og:description" content="Website disclaimer for Burbage Law, PC.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" data-nav="index" href="index.html">Burbage<span>Law</span></a>
+  <nav class="site-nav" aria-label="Main"><a data-nav="index" href="index.html">Home</a><a data-nav="services" href="services.html">Services</a><a data-nav="about" href="about.html">About</a><a data-nav="updates" href="updates.html">Case Law</a><a data-nav="contact" href="contact.html">Contact</a></nav>
+</div></header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Disclaimer</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap measure">
+    <p>The information on this website is not legal advice or a legal opinion, and cannot be relied
+      on as either. Presenting it here does not create an attorney-client relationship or any other
+      relationship with Burbage Law, PC or its attorneys.</p>
+    <p>The law changes, and outcomes depend on facts and circumstances that differ from matter to
+      matter. Statements here about the state of the law may not be current and may not apply to your
+      situation. The case law summaries on this site are general descriptions of published decisions
+      and agency guidance, prepared for information only. Consult a qualified attorney about your own
+      matter.</p>
+    <p>Company names on this site identify patent work performed by Jon Burbage at this firm or at
+      prior firms. They are not endorsements, and no company named has reviewed or approved this
+      site.</p>
+    <p>Burbage Law, PC is a professional corporation organized in Utah. Jon Burbage is registered to
+      practice before the United States Patent and Trademark Office and is admitted to the Utah State
+      Bar and the State Bar of California.</p>
+  </div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <div>&copy; 2026 Burbage Law, PC &middot; Salt Lake City, Utah</div>
+  <div class="foot-links">
+    <a href="tel:+14159393529">415.939.3529</a>
+    <a href="mailto:jon@burbagelaw.com">jon@burbagelaw.com</a>
+    <a data-nav="contact" href="contact.html">Contact</a>
+    <a data-nav="disclaimer" href="disclaimer.html">Disclaimer</a>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var f = document.getElementById('intake');
+  if (!f) return;
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var s = document.getElementById('form-status');
+    var name = f.name.value.trim(), email = f.email.value.trim();
+    if (!name || !email) { s.textContent = 'Please add your name and email so Jon can reply.'; return; }
+    var body = 'Name: ' + name + '\nCompany: ' + f.company.value.trim() +
+               '\nEmail: ' + email + '\nTopic: ' + f.topic.value +
+               '\n\n' + f.message.value.trim();
+    var url = 'mailto:jon@burbagelaw.com?subject=' + encodeURIComponent('Website enquiry — ' + name) +
+              '&body=' + encodeURIComponent(body);
+    s.textContent = 'Opening your email program. If nothing happens, write to jon@burbagelaw.com directly.';
+    window.location.href = url;
+  });
+})();
+</script>
+</body>
+</html>

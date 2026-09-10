@@ -1,0 +1,78 @@
+{
+  "updated": "2026-09-09",
+  "note": "Developments in United States and European patent law affecting software and artificial intelligence inventions. Newest first.",
+  "entries": [
+    {
+      "date": "2026-07-14",
+      "tag": "Legislation",
+      "court": false,
+      "title": "Patent Eligibility Restoration Act gets its first full-committee hearing, and stalls there",
+      "cite": "S. 1546 (119th Cong.); H.R. 3152 \u2014 Senate Judiciary Committee hearing, July 14, 2026",
+      "summary": "The Senate Judiciary Committee held its first full-committee hearing on the Patent Eligibility Restoration Act, the Tillis\u2013Coons bill that would abolish the judge-made exceptions to 35 U.S.C. \u00a7 101 and replace them with five statutory exclusions, one of which covers processes that are substantially economic, financial, business, social, cultural, or artistic. The bill did not advance. Chairman Grassley described the hearing as fact-finding and said the committee had not reached consensus.",
+      "takeaway": "Nothing to plan around yet. This is the fourth Congress to consider a \u00a7 101 rewrite without passing one, so applications filed today should still be drafted to survive Alice and Mayo rather than a hoped-for statute."
+    },
+    {
+      "date": "2026-07-07",
+      "tag": "Fed. Cir.",
+      "court": true,
+      "title": "Deep learning claims held abstract where the network itself was off the shelf",
+      "cite": "Dental Monitoring SAS v. Align Technology, Inc., No. 2024-2270 (Fed. Cir. July 7, 2026) (nonprecedential); U.S. Pat. Nos. 11,049,248 and 10,755,409",
+      "summary": "The claims covered methods of using a deep learning device to analyze images of dental arches, to evaluate how an orthodontic aligner fit and to measure separation between teeth. Applying the two-step Alice test, the Federal Circuit held the claims were directed to collecting and analyzing information and supplied no inventive concept. The specification described the deep learning device as selectable from a list of well-known and available neural networks, and the court declined to treat the training methodology or the claimed accuracy gains as a technical improvement.",
+      "takeaway": "Accuracy and speed figures do not rescue a claim. What survives is a claimed technical mechanism \u2014 a specific architecture, a specific training-data construction, a specific way the model is integrated with the rest of the system \u2014 written into the specification before filing, not argued for the first time in a response."
+    },
+    {
+      "date": "2026-03-17",
+      "tag": "EPO",
+      "court": false,
+      "title": "2026 EPO Guidelines add a dedicated treatment of artificial intelligence",
+      "cite": "Guidelines for Examination in the EPO (2026 edition), General Part 5 \u201cThe use of artificial intelligence\u201d; E-III, 10.1; F-III, 3",
+      "summary": "The 2026 edition of the EPO Guidelines for Examination adds a new general section on the use of artificial intelligence and tightens the sufficiency-of-disclosure requirements for artificial intelligence inventions at F-III, 3. Applicants must disclose the mathematical methods and the training data in enough detail that a skilled person can reproduce the invention without undue burden, and must make the asserted technical effect credible on the face of the application.",
+      "takeaway": "The European disclosure standard is now stricter than the United States written-description practice most applicants file to. For a family headed to both offices, the training-data description and the technical-effect showing have to be in the priority document, because neither can be added later without a new matter objection."
+    },
+    {
+      "date": "2026-02-24",
+      "tag": "Fed. Cir.",
+      "court": true,
+      "title": "Applying a known machine learning technique to a new field is still abstract",
+      "cite": "Rensselaer Polytechnic Institute v. Amazon.com, Inc., No. 24-1725 (Fed. Cir. Feb. 24, 2026) (Dyk, J.); U.S. Pat. No. 7,177,798",
+      "summary": "The patent claimed a method of processing natural language input using case-based reasoning, a machine learning technique that resolves ambiguity by drawing on stored historical examples in a metadata database. The Federal Circuit affirmed ineligibility, holding that generic use of artificial intelligence without other parameters is abstract, and that a conventional application of case-based reasoning, even to a novel environment, does not become eligible because the environment is new. The specification's own description of the database elements as well known in the art was used against the patentee at step two.",
+      "takeaway": "Background sections that concede prior-art status get quoted back at step two. Describe what is conventional at the level of generality the claims do not depend on, and reserve the detailed description for the parts of the system that are actually new."
+    },
+    {
+      "date": "2025-11-28",
+      "tag": "USPTO",
+      "court": false,
+      "title": "USPTO rescinds the 2024 inventorship guidance and treats artificial intelligence as a tool only",
+      "cite": "Revised Inventorship Guidance for AI-Assisted Inventions, 90 Fed. Reg. 54636 (Nov. 28, 2025), rescinding 89 Fed. Reg. 10043 (Feb. 13, 2024)",
+      "summary": "The USPTO withdrew its February 2024 guidance on artificial-intelligence-assisted inventions and replaced it with guidance treating artificial intelligence systems as tools rather than as candidate joint inventors. The Office stated that the Pannu joint-inventorship factors apply only among natural persons and cannot be extended to an artificial intelligence system, and directed examiners to apply the ordinary inventorship standard without a separate pathway for applications involving artificial intelligence.",
+      "takeaway": "Thaler v. Vidal still controls: every named inventor must be a natural person. The practical change is that inventorship questionnaires no longer need a separate significant-contribution analysis for the model itself; they need a record of which human made the conception decisions the claims rest on."
+    },
+    {
+      "date": "2025-09-26",
+      "tag": "PTAB",
+      "court": false,
+      "title": "Appeals Review Panel finds machine learning claims eligible on efficiency-based technical improvements",
+      "cite": "Ex parte Desjardins, Appeals Review Panel decision (Sept. 26, 2025) (convened sua sponte by the Director)",
+      "summary": "The USPTO Director convened an Appeals Review Panel to review a Board rejection of machine learning method claims under \u00a7 101. The panel disagreed with the Board's step-two analysis and held that technological advantages of the claimed method, including reduced storage requirements and efficiency gains, amount to a practical application of the abstract idea where those advantages are reflected in the claim language itself.",
+      "takeaway": "This is the single most useful citation available in prosecution right now for a machine learning claim carrying a resource-efficiency benefit. It works only if the efficiency is recited in the claim, not merely asserted in the specification or the response."
+    },
+    {
+      "date": "2025-08-04",
+      "tag": "USPTO",
+      "court": false,
+      "title": "Director's memorandum narrows the mental-process rejection and imposes an evidence standard",
+      "cite": "Memorandum, \u201cReminders on Evaluating Subject Matter Eligibility of Claims under 35 U.S.C. 101\u201d (Aug. 4, 2025), directed to Technology Centers 2100, 2600, and 3600",
+      "summary": "The Director issued a memorandum to the software and business-method art units reminding examiners that a process falls in the mental-process grouping only if a human could practically perform it, not merely if a human could theoretically perform some version of it, and that an eligibility rejection must be supported under the same preponderance-of-the-evidence standard as any other rejection.",
+      "takeaway": "Cite the memorandum by name in the response and make the examiner carry the evidentiary burden. Where a claim recites a computation no person could practically perform \u2014 the data volume, the latency requirement, or the model size makes it impossible \u2014 say so on the record with the numbers from the specification."
+    },
+    {
+      "date": "2025-04-18",
+      "tag": "Fed. Cir.",
+      "court": true,
+      "title": "Recentive sets the baseline rule for machine learning eligibility",
+      "cite": "Recentive Analytics, Inc. v. Fox Corp., 134 F.4th 1205 (Fed. Cir. Apr. 18, 2025), No. 2023-2437",
+      "summary": "Four patents claimed the use of machine learning models to generate television broadcast schedules and network maps. The Federal Circuit affirmed dismissal under \u00a7 101 and held that claims doing no more than applying established methods of machine learning to a new data environment, without disclosing improvements to the machine learning models themselves, are ineligible. The court left open how large an improvement must be and how much empirical support a patentee must supply.",
+      "takeaway": "The holding is narrow on its face and broad in the hands of an examiner. Treat improvements to the model as the thing being patented and describe them structurally, and expect to answer the questions Recentive left open with data in the specification rather than argument."
+    }
+  ]
+}

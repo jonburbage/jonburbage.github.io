@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Burbage Law</title>
+<meta name="description" content="Contact Jon Burbage at Burbage Law, PC in Salt Lake City about a patent filing, an appeal, or a portfolio.">
+<link rel="canonical" href="https://burbagelaw.com/contact.html">
+<meta property="og:title" content="Contact — Burbage Law">
+<meta property="og:description" content="Contact Jon Burbage at Burbage Law, PC in Salt Lake City about a patent filing, an appeal, or a portfolio.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" data-nav="index" href="index.html">Burbage<span>Law</span></a>
+  <nav class="site-nav" aria-label="Main"><a data-nav="index" href="index.html">Home</a><a data-nav="services" href="services.html">Services</a><a data-nav="about" href="about.html">About</a><a data-nav="updates" href="updates.html">Case Law</a><a data-nav="contact" href="contact.html" aria-current="page">Contact</a></nav>
+</div></header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Discuss a matter</h1>
+    <p class="lede">Jon Burbage answers his own phone and his own email. If you are considering a
+      filing, an appeal, or moving a portfolio, start with either.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div>
+      <dl class="detail-list">
+        <div><dt>Telephone</dt><dd><a href="tel:+14159393529">415.939.3529</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:jon@burbagelaw.com">jon@burbagelaw.com</a></dd></div>
+        <div><dt>Mailing address</dt><dd>1953 S. 1100 E.<br>Unit 526249<br>Salt Lake City, UT 84152</dd></div>
+      </dl>
+      <p class="note" style="margin-top:28px"><strong>Before you send anything confidential.</strong>
+        Sending a message through this page does not create an attorney-client relationship and does
+        not make what you send confidential. Please describe your situation in general terms until we
+        have agreed in writing that the firm represents you.</p>
+    </div>
+    <div>
+      <form class="intake" id="intake" novalidate>
+        <label for="f-name">Your name
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </label>
+        <label for="f-company">Company
+          <input id="f-company" name="company" type="text" autocomplete="organization">
+        </label>
+        <label for="f-email">Email
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </label>
+        <label for="f-topic">What do you need?
+          <select id="f-topic" name="topic">
+            <option>New patent application</option>
+            <option>Office action or appeal</option>
+            <option>Portfolio management</option>
+            <option>Search, clearance or freedom to operate</option>
+            <option>Due diligence for a financing or acquisition</option>
+            <option>Outside general counsel</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label for="f-msg">In general terms, what is the technology?
+          <textarea id="f-msg" name="message"
+            placeholder="Please keep this general until we have an engagement in place."></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <div>&copy; 2026 Burbage Law, PC &middot; Salt Lake City, Utah</div>
+  <div class="foot-links">
+    <a href="tel:+14159393529">415.939.3529</a>
+    <a href="mailto:jon@burbagelaw.com">jon@burbagelaw.com</a>
+    <a data-nav="contact" href="contact.html">Contact</a>
+    <a data-nav="disclaimer" href="disclaimer.html">Disclaimer</a>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var f = document.getElementById('intake');
+  if (!f) return;
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var s = document.getElementById('form-status');
+    var name = f.name.value.trim(), email = f.email.value.trim();
+    if (!name || !email) { s.textContent = 'Please add your name and email so Jon can reply.'; return; }
+    var body = 'Name: ' + name + '\nCompany: ' + f.company.value.trim() +
+               '\nEmail: ' + email + '\nTopic: ' + f.topic.value +
+               '\n\n' + f.message.value.trim();
+    var url = 'mailto:jon@burbagelaw.com?subject=' + encodeURIComponent('Website enquiry — ' + name) +
+              '&body=' + encodeURIComponent(body);
+    s.textContent = 'Opening your email program. If nothing happens, write to jon@burbagelaw.com directly.';
+    window.location.href = url;
+  });
+})();
+</script>
+</body>
+</html>
