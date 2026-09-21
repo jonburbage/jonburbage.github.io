@@ -1,7 +1,43 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "note": "Developments in United States, European and Asian patent law affecting software and artificial intelligence inventions, together with the regulation and policy that shapes what clients can build and ship. Newest first.",
   "entries": [
+    {
+      "date": "2026-09-21",
+      "tag": "Costs",
+      "court": false,
+      "title": "Appeal outcomes in the software technology center run sixteen points better than in the business method technology center",
+      "cite": "United States Patent and Trademark Office, Monthly Appeal Statistics, August 2026, ex parte appeal receipts and dispositions, fiscal year to date, October 2025 through August 2026",
+      "summary": "Across the whole Patent Trial and Appeal Board, 4,554 ex parte appeals were decided in the fiscal year through August 2026: 2,711 affirmed, or 59.5 percent, 357 affirmed in part, or 7.8 percent, and 1,454 reversed, or 31.9 percent. The technology centers diverge sharply. Technology Center 2100, which examines computer architecture, software and artificial intelligence subject matter, decided 497 appeals and reversed 196 of them, a reversal rate of 39.4 percent. Technology Center 3600, which holds the business method art units, decided 943 appeals and reversed 216, a reversal rate of 22.9 percent, while Technology Center 2600 decided 287 and reversed 103, at 35.9 percent. The Office does not break these outcomes down by type of rejection, so no official figure exists for reversal rates on subject matter eligibility rejections specifically.",
+      "takeaway": "Where an application is classified changes the expected value of an appeal by roughly sixteen percentage points, and that belongs in the decision about whether to appeal or file a continuation. An application in Technology Center 2100 carrying a rejection the examiner will not withdraw is worth appealing on these numbers; the same rejection in a business method art unit in Technology Center 3600 is a harder bet and usually argues for a claim amendment and a continuation instead. Anyone quoting a reversal rate for eligibility rejections in particular is quoting a private analysis of Office data rather than an Office statistic, and that distinction is worth making when the number is being used to justify a budget."
+    },
+    {
+      "date": "2026-09-18",
+      "tag": "US Policy",
+      "court": false,
+      "title": "California moves toward placing independent auditors inside frontier artificial intelligence laboratories",
+      "cite": "California Executive Order N-9-26 (September 18, 2026); Senate Bill 813 (McNerney) and Assembly Bill 1405 (Bauer-Kahan), signed September 9, 2026",
+      "summary": "Senate Bill 813 creates a framework under which independent verification organizations assess artificial intelligence systems and models for compliance with California law, and Assembly Bill 1405 creates a state registry of artificial intelligence auditors with standards for independence, transparency and integrity. Both were signed on September 9, 2026. Executive Order N-9-26 then directed the Government Operations Agency to accelerate the implementation timelines for both statutes and to convene national experts within two months to recommend strengthening state law. Among the recommendations the order names are requiring frontier artificial intelligence companies to embed a designated independent verification organization onsite in their laboratories to conduct regular audits, requiring that safety frameworks and risk assessments be verified by independent organizations, advancing an emergency shutdown mechanism for frontier models, and expanding the definition of a critical safety incident to cover loss-of-control scenarios.",
+      "takeaway": "Trade secret protection rests on reasonable measures to keep the information secret, and a statutory regime that seats an outside auditor inside the building with access to model internals changes what those measures have to look like and enlarges the set of people who have seen the method. Anything a company is currently holding as a trade secret rather than filing on, including training pipelines, evaluation harnesses and safety classifier architectures, should be re-examined now against the question of whether it will still be secret once an audit regime reaches it. Disclosure to an auditor under legal compulsion is not a printed publication and does not by itself start a statutory bar, but it multiplies the number of places from which the secret can escape, and the decision to file is far cheaper made before the auditor arrives than after."
+    },
+    {
+      "date": "2026-09-14",
+      "tag": "Fed. Cir.",
+      "court": true,
+      "title": "A private sale is not a public disclosure, so it does not switch on the inventor grace period shield",
+      "cite": "NCS Multistage Inc. v. Nine Energy Service, Inc., No. 2025-1000 (Fed. Cir. Sept. 14, 2026) (precedential)",
+      "summary": "Section 102(b)(1)(B) of Title 35 of the United States Code removes a third party disclosure from the prior art if the inventor publicly disclosed the same subject matter first. The patentee sold its first commercial unit to a customer in July 2012 with no confidentiality restriction, and argued that the sale was a public disclosure that disqualified a competing third party sale in August 2012. The Federal Circuit disagreed, holding that a private sale does not constitute a public disclosure even where the goods are actually delivered to the buyer without any confidentiality restriction. The panel extended to the grace period the reasoning it had applied to the derivation exception in Sanho Corp. v. Kaijet Technology International.",
+      "takeaway": "A quiet commercial sale before filing buys an inventor nothing against a competitor who publishes or sells the same thing a month later. This matters most to companies that place a model, a tool or an instrumented system with design partners under a paid pilot before anything is on file, because those transactions feel like disclosure to the business and count as nothing to the statute. The only reliable protection against an intervening third party disclosure is a filed application, so the pilot agreement and the provisional application should be executed in the same week rather than in that order."
+    },
+    {
+      "date": "2026-09-10",
+      "tag": "Filings",
+      "court": false,
+      "title": "Nvidia seeks two-element coverage of the step that tells an agent which data source to use",
+      "cite": "United States Patent Application Publication No. 2026/0267897 A1, Nvidia Corporation, \"Automated Generation of Data Source Descriptions for Agentic Workflows,\" published September 10, 2026, filed August 20, 2025, claiming priority to United States Provisional Application No. 63/768,550, filed March 7, 2025",
+      "summary": "Claim 1 recites a system with processing circuitry to query a data collection with a zero-vector to retrieve a subset of data from the data collection, and to generate, using a machine learning model, a summary of the data collection based at least on the subset of data. In plain terms, the system probes a vector database with an all-zeros query embedding, which returns an arbitrary rather than a semantically targeted sample, and then has a model write a description of what the whole collection holds. That description is what an agent later reads when deciding which data source a task should be routed to. The claim has two elements and is not limited to large language models, to any particular agent framework, to retrieval augmented generation, or to text. It was one of six Nvidia applications published the same day, another of which, Publication No. 2026/0267835 A1, claims using agreement among multiple retriever models as a substitute for human labeling when selecting a filter for synthetic training data.",
+      "takeaway": "This is the automatic data source description step that sits in most agentic data stacks, claimed at a breadth that will read on a great deal of ordinary practice if it issues near its published scope. Any company building agent orchestration over its own data should put this publication in front of whoever runs freedom to operate, and should check whether its own equivalent step is described anywhere in its own filings. The wider signal is that the company selling the hardware underneath everyone's agents is filing on the orchestration software above it, while the two laboratories with the most valuable models hold almost nothing: as indexed by Justia Patents on September 21, 2026, the entire United States portfolio of Anthropic, PBC runs to fourteen documents and that of OpenAI OpCo LLC to four."
+    },
     {
       "date": "2026-09-09",
       "tag": "Research",
