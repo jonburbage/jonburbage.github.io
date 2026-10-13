@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJJ3L3F9YP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GJJ3L3F9YP');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlphaFold 3 publishes its architecture and pseudocode but keeps code and weights behind a non-commercial server — Burbage Law</title>
+<meta name="description" content="AlphaFold 3 splits a model between publication and secrecy. The architecture, the training approach and the pseudocode are now prior art against every filing made after May 8, 2024…">
+<link rel="canonical" href="https://burbagelaw.com/entries/2024-05-08-alphafold-3-publishes-architecture-pseudocode-but-ke.html">
+<meta property="og:title" content="AlphaFold 3 publishes its architecture and pseudocode but keeps code and weights behind a non-commercial server — Burbage Law">
+<meta property="og:description" content="AlphaFold 3 splits a model between publication and secrecy. The architecture, the training approach and the pseudocode are now prior art against every filing made after May 8, 2024…">
+<meta property="og:url" content="https://burbagelaw.com/entries/2024-05-08-alphafold-3-publishes-architecture-pseudocode-but-ke.html">
+<meta property="og:site_name" content="Burbage Law, PC">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta property="article:published_time" content="2024-05-08">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" data-nav="index" href="../index.html">Burbage<span>Law</span></a>
+  <nav class="site-nav" aria-label="Main"><a data-nav="index" href="../index.html">Home</a><a data-nav="services" href="../services.html">Services</a><a data-nav="about" href="../about.html">About</a><a data-nav="updates" href="../updates.html" aria-current="page">Developments</a><a data-nav="contact" href="../contact.html">Contact</a></nav>
+</div></header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="../updates.html">Developments</a></p>
+    <h1>AlphaFold 3 publishes its architecture and pseudocode but keeps code and weights behind a non-commercial server</h1>
+    <div class="updates-meta" style="border-bottom:0;padding-bottom:0">
+      <span>2024-05-08</span><span class="tag">Industry</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:22px">
+  <div class="wrap">
+    <div class="measure">
+      <p class="cite">Josh Abramson et al., &quot;Accurate structure prediction of biomolecular interactions with AlphaFold 3,&quot; Nature (published online May 8, 2024), doi:10.1038/s41586-024-07487-w; Google DeepMind AlphaFold team and Isomorphic Labs, &quot;AlphaFold 3 predicts the structure and interactions of all of life&#x27;s molecules,&quot; blog.google (May 8, 2024)</p>
+      <p style="margin-top:18px">Google DeepMind and Isomorphic Labs published AlphaFold 3 in Nature, received December 19, 2023 and accepted April 29, 2024. The paper describes a model that predicts the &quot;joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues.&quot; It replaces the Evoformer of AlphaFold 2 with a Pairformer that operates on pair and single representations with reduced multiple-sequence-alignment processing, and replaces the structure module with a diffusion module that predicts raw atom coordinates directly. The abstract reports &quot;far greater accuracy for protein–ligand interactions compared with state-of-the-art docking tools,&quot; &quot;much higher accuracy for protein–nucleic acid interactions compared with nucleic-acid-specific predictors&quot; and &quot;substantially higher antibody–antigen prediction accuracy compared with AlphaFold-Multimer v.2.3.&quot; The methods give full algorithm details with pseudocode in Supplementary Algorithms 1 to 31, and the training and evaluation data come from public sources, principally the Protein Data Bank. AlphaFold 2&#x27;s source code and trained weights were released under an open-source license with its July 2021 paper; AlphaFold 3 is released without code or weights. Access is through AlphaFold Server, a free platform for non-commercial research that models proteins, DNA, RNA, a selection of ligands, ions and chemical modifications, while Isomorphic Labs applies the model with pharmaceutical partners to drug design.</p>
+      <div class="takeaway" style="margin-top:22px"><b>What it changes</b>AlphaFold 3 splits a model between publication and secrecy. The architecture, the training approach and the pseudocode are now prior art against every filing made after May 8, 2024 on diffusion-based structure prediction, by competitors and by the authors themselves outside the United States grace period, while the trained weights, the product of training runs the paper describes but does not hand over, stay behind server terms. Companies that publish model research can make the same split deliberately: file on the architecture and training method before publication, publish what builds standing in the field, and keep weights and data pipelines as trade secrets, with access controls and use restrictions as the reasonable measures that secrecy requires. For pharmaceutical and chemistry teams, the server&#x27;s non-commercial limit means commercial discovery work cannot run on it, and compounds designed from any structure prediction still need an inventorship record showing the chemist&#x27;s contribution beyond selecting the predicted structure.</div>
+    </div>
+    <nav class="entry-nav"><div><a href="2024-05-16-tokyo-district-court-holds-only-natural-person-can-i.html">&larr; Tokyo District Court holds that only a natural person can be an inventor under Japan&#x27;s Patent Act</a></div><div><a href="2024-04-30-uspto-asks-whether-machine-generated-disclosures-pri.html">USPTO asks whether machine-generated disclosures are prior art and whether the skilled person is presumed to use models &rarr;</a></div></nav>
+    <p style="margin-top:30px"><a href="../updates.html">&larr; All recent developments</a> &nbsp;&middot;&nbsp; <a href="../archive.html">Full archive</a></p>
+    <p class="fine" style="margin-top:26px">This is general information about a published decision,
+      agency guidance or piece of legislation. It is not legal advice and does not create an
+      attorney-client relationship. Items concerning offices outside the United States are reported
+      for information only and are not counsel on the law of those countries.</p>
+  </div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <div>&copy; 2026 Burbage Law, PC &middot; Salt Lake City, Utah</div>
+  <div class="foot-links">
+    <a href="tel:+14159393529">415.939.3529</a>
+    <a href="mailto:jon@burbagelaw.com">jon@burbagelaw.com</a>
+    <a data-nav="contact" href="../contact.html">Contact</a>
+    <a data-nav="disclaimer" href="../disclaimer.html">Disclaimer</a>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var f = document.getElementById('intake');
+  if (!f) return;
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var s = document.getElementById('form-status');
+    var name = f.name.value.trim(), email = f.email.value.trim();
+    if (!name || !email) { s.textContent = 'Please add your name and email so Jon can reply.'; return; }
+    var body = 'Name: ' + name + '\nCompany: ' + f.company.value.trim() +
+               '\nEmail: ' + email + '\nTopic: ' + f.topic.value +
+               '\n\n' + f.message.value.trim();
+    var url = 'mailto:jon@burbagelaw.com?subject=' + encodeURIComponent('Website enquiry — ' + name) +
+              '&body=' + encodeURIComponent(body);
+    s.textContent = 'Opening your email program. If nothing happens, write to jon@burbagelaw.com directly.';
+    window.location.href = url;
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJJ3L3F9YP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GJJ3L3F9YP');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stable Diffusion&#x27;s open-weights release puts a working text-to-image model in the prior art and in every competitor&#x27;s hands — Burbage Law</title>
+<meta name="description" content="An open-weights release with code, a model card and a training recipe is prior art under Section 102(a)(1) of Title 35 of the United States Code, dated today, against every subsequ…">
+<link rel="canonical" href="https://burbagelaw.com/entries/2022-08-22-stable-diffusion-s-open-weights-release-puts-working.html">
+<meta property="og:title" content="Stable Diffusion&amp;#x27;s open-weights release puts a working text-to-image model in the prior art and in every competitor&amp;#x27;s hands — Burbage Law">
+<meta property="og:description" content="An open-weights release with code, a model card and a training recipe is prior art under Section 102(a)(1) of Title 35 of the United States Code, dated today, against every subsequ…">
+<meta property="og:url" content="https://burbagelaw.com/entries/2022-08-22-stable-diffusion-s-open-weights-release-puts-working.html">
+<meta property="og:site_name" content="Burbage Law, PC">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta property="article:published_time" content="2022-08-22">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" data-nav="index" href="../index.html">Burbage<span>Law</span></a>
+  <nav class="site-nav" aria-label="Main"><a data-nav="index" href="../index.html">Home</a><a data-nav="services" href="../services.html">Services</a><a data-nav="about" href="../about.html">About</a><a data-nav="updates" href="../updates.html" aria-current="page">Developments</a><a data-nav="contact" href="../contact.html">Contact</a></nav>
+</div></header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="../updates.html">Developments</a></p>
+    <h1>Stable Diffusion&#x27;s open-weights release puts a working text-to-image model in the prior art and in every competitor&#x27;s hands</h1>
+    <div class="updates-meta" style="border-bottom:0;padding-bottom:0">
+      <span>2022-08-22</span><span class="tag">Industry</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:22px">
+  <div class="wrap">
+    <div class="measure">
+      <p class="cite">Stability AI, &quot;Stable Diffusion Public Release,&quot; stability.ai (Aug. 22, 2022); model weights, model card and code published at huggingface.co/CompVis/stable-diffusion under the CreativeML OpenRAIL-M license; CompVis, stable-diffusion repository, github.com/CompVis/stable-diffusion</p>
+      <p style="margin-top:18px">Stability AI announced the public release of Stable Diffusion &quot;following our release for researchers,&quot; making the model&#x27;s weights, model card and code available at Hugging Face under the CreativeML OpenRAIL-M license, which the company describes as &quot;a permissive license that allows for commercial and non-commercial usage&quot; and which &quot;must accompany any distribution of the model&quot; and &quot;must also be made available to end users of the model in any service on it.&quot; The recommended checkpoint is v1.4 at 470,000 training steps; the model card reports that v1.4 resumed from v1.2 for 225,000 steps at 512 by 512 resolution on the &quot;laion-aesthetics v2 5+&quot; subset with 10 percent dropping of the text conditioning, on 32 machines of eight A100 GPUs, and estimates 150,000 hours used for version 1. Stable Diffusion is a latent text-to-image diffusion model implementing the CVPR 2022 paper &quot;High-Resolution Image Synthesis with Latent Diffusion Models&quot; by Rombach, Blattmann, Lorenz, Esser and Ommer of the CompVis group, built in collaboration with Stability AI and Runway with support from LAION, with an 860 million parameter UNet and a 123 million parameter frozen CLIP ViT-L/14 text encoder, trained on a subset of the LAION-5B database, and running on a GPU with at least 10 gigabytes of memory; the announcement puts memory use at 6.9 gigabytes. Stability AI asks users to apply the model &quot;in an ethical, moral, and legal manner.&quot;</p>
+      <div class="takeaway" style="margin-top:22px"><b>What it changes</b>An open-weights release with code, a model card and a training recipe is prior art under Section 102(a)(1) of Title 35 of the United States Code, dated today, against every subsequent application on text-to-image diffusion: the latent-space training, the text conditioning through a frozen CLIP encoder and the sampling pipeline are disclosed in enabling detail, and a claim that reads on what the repository does is anticipated. For a company that was keeping a diffusion model as a trade secret, the secret is now confined to what the release does not disclose: the proprietary data, the fine-tuning and the serving infrastructure, not the model class. For a company building on the weights, the OpenRAIL-M license travels with every distribution and reaches end users of any service built on the model, so its use restrictions belong in the product&#x27;s terms and in the diligence file. For a competitor, the moment to file on an improvement to a public model is before the improvement is itself released.</div>
+    </div>
+    <nav class="entry-nav"><div><a href="2022-08-23-deepmind-s-issued-claims-cover-decoding-translation.html">&larr; DeepMind&#x27;s issued claims cover decoding a translation or summary by combining channel and source scores</a></div><div><a href="2022-08-05-federal-circuit-holds-inventor-must-natural-person-s.html">Federal Circuit holds that an inventor must be a natural person, so an artificial intelligence system cannot be one &rarr;</a></div></nav>
+    <p style="margin-top:30px"><a href="../updates.html">&larr; All recent developments</a> &nbsp;&middot;&nbsp; <a href="../archive.html">Full archive</a></p>
+    <p class="fine" style="margin-top:26px">This is general information about a published decision,
+      agency guidance or piece of legislation. It is not legal advice and does not create an
+      attorney-client relationship. Items concerning offices outside the United States are reported
+      for information only and are not counsel on the law of those countries.</p>
+  </div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <div>&copy; 2026 Burbage Law, PC &middot; Salt Lake City, Utah</div>
+  <div class="foot-links">
+    <a href="tel:+14159393529">415.939.3529</a>
+    <a href="mailto:jon@burbagelaw.com">jon@burbagelaw.com</a>
+    <a data-nav="contact" href="../contact.html">Contact</a>
+    <a data-nav="disclaimer" href="../disclaimer.html">Disclaimer</a>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var f = document.getElementById('intake');
+  if (!f) return;
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var s = document.getElementById('form-status');
+    var name = f.name.value.trim(), email = f.email.value.trim();
+    if (!name || !email) { s.textContent = 'Please add your name and email so Jon can reply.'; return; }
+    var body = 'Name: ' + name + '\nCompany: ' + f.company.value.trim() +
+               '\nEmail: ' + email + '\nTopic: ' + f.topic.value +
+               '\n\n' + f.message.value.trim();
+    var url = 'mailto:jon@burbagelaw.com?subject=' + encodeURIComponent('Website enquiry — ' + name) +
+              '&body=' + encodeURIComponent(body);
+    s.textContent = 'Opening your email program. If nothing happens, write to jon@burbagelaw.com directly.';
+    window.location.href = url;
+  });
+})();
+</script>
+</body>
+</html>
