@@ -548,3 +548,5 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 
 /* Closing line on the Patents page pointing to About and Developments, 2026-10-13 */
 .pat-next { margin-top: 28px; }
+/* Keep a group opened from a link below the sticky menu bar, 2026-10-13 */
+.pat-group { scroll-margin-top: 88px; }
