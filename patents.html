@@ -71,8 +71,22 @@
       the portfolio passed to Verizon, whose front pages name no attorney. Patents from his years at
       Fenwick &amp; West and Patent Law Works name only the firm on their front pages and are not
       included.</p>
+    <p class="measure pat-next">For Jon Burbage&rsquo;s background, see <a data-nav="about" href="about.html">About</a>; for his
+      tracking of artificial intelligence patent law, see <a data-nav="updates" href="updates.html">Developments</a>.</p>
   </div>
 </section>
+<script>
+/* Opens the technology group named in the address (for example patents.html#robot), so links from the About page land on an open list. Added 2026-10-13. */
+(function () {
+  function openTarget() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var d = id && document.getElementById(id);
+    if (d && d.tagName === "DETAILS") { d.open = true; d.scrollIntoView(); }
+  }
+  window.addEventListener("hashchange", openTarget);
+  openTarget();
+})();
+</script>
 </main>
 <footer class="site-foot"><div class="wrap">
   <div>&copy; 2026 Burbage Law, PC &middot; Salt Lake City, Utah</div>

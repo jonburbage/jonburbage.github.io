@@ -545,3 +545,6 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 
 /* Who-is-behind-this-site paragraph on entry and data pages, 2026-10-13 */
 .about-note { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--rule); }
+
+/* Closing line on the Patents page pointing to About and Developments, 2026-10-13 */
+.pat-next { margin-top: 28px; }
