@@ -541,3 +541,4 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 .pat-list a { font-weight: 500; }
 .pat-meta { display: block; margin-top: 3px; font-family: var(--f-mono); font-size: .8rem; color: var(--ink-muted); overflow-wrap: anywhere; }
 .pat-note { margin-top: 20px; color: var(--ink-muted); font-size: .92rem; }
+.pat-portfolio-note { margin-top: 24px; }
