@@ -9,6 +9,24 @@
   <lastBuildDate>Mon, 12 Oct 2026 12:00:00 +0000</lastBuildDate>
   <image><url>https://burbagelaw.com/og-card.png</url><title>Burbage Law — Developments</title><link>https://burbagelaw.com/updates.html</link></image>
   <item>
+    <title>Big-company AI patent publications rose sharply this summer, and the usual AI class misses 44% of them</title>
+    <link>https://burbagelaw.com/data/2026-10-13-who-is-filing-ai-patent-applications.html</link>
+    <guid isPermaLink="true">https://burbagelaw.com/data/2026-10-13-who-is-filing-ai-patent-applications.html</guid>
+    <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Data</category>
+    <description>Published U.S. applications from eight of the largest AI companies, July 16 to October 8, 2026, compared with the same weeks of 2025.
+
+Alphabet published 350 AI-related patent applications in the 13 weekly publication dates ending October 8, 2026, up from 221 in the same weeks of 2025. Nvidia went from 128 to 226. Microsoft rose more slowly, from 193 to 213. OpenAI went from 10 to 24, from a small base.
+
+Publications classified in G06N, the classification most people mean by “AI patents,” rose from 3,868 to 6,017 over the same weeks, an increase of 56%. All published utility applications rose 28%, from 90,195 to 115,085, so G06N’s share of everything published rose from 4.3% to 5.2%.
+
+Across the eight companies, AI-related applications whose titles name an agent or an agentic system rose from 14 to 47. Alphabet went from 3 to 17, Microsoft from 2 to 16 and Nvidia from 1 to 10. The median gap between effective filing date and publication for these 47 was 18 months, so most were filed in early 2025.
+
+Many of these filings are not in G06N at all. They are classified under natural language processing (G06F 40), computer vision (G06V) or speech (G10L) instead. Across the seven companies with at least 20 AI-related publications, G06N missed 419 of 949, or 44%. The gap runs from 37% for Alphabet to 71% for Meta and 77% for Apple.
+
+A landscape, freedom-to-operate or competitor-monitoring search that relies on G06N alone will miss a large share of the relevant art, and for some companies most of it. Add G06F 40, G06V and G10L, and search titles and claims for model and agent terms.</description>
+  </item>
+  <item>
     <title>OpenAI claims loading a narrative memory of the user, written offline from past chats, into the context window before the first prompt</title>
     <link>https://burbagelaw.com/entries/2026-10-08-openai-claims-loading-narrative-memory-user-written.html</link>
     <guid isPermaLink="true">https://burbagelaw.com/entries/2026-10-08-openai-claims-loading-narrative-memory-user-written.html</guid>
