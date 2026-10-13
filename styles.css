@@ -542,3 +542,6 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 .pat-meta { display: block; margin-top: 3px; font-family: var(--f-mono); font-size: .8rem; color: var(--ink-muted); overflow-wrap: anywhere; }
 .pat-note { margin-top: 20px; color: var(--ink-muted); font-size: .92rem; }
 .pat-portfolio-note { margin-top: 24px; }
+
+/* Who-is-behind-this-site paragraph on entry and data pages, 2026-10-13 */
+.about-note { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--rule); }
