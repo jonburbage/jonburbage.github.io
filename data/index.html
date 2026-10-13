@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJJ3L3F9YP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GJJ3L3F9YP');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data — Burbage Law</title>
+<meta name="description" content="Original weekly data on artificial intelligence patent applications from public USPTO records, with charts and method.">
+<link rel="canonical" href="https://burbagelaw.com/data/">
+<meta property="og:title" content="Data — Burbage Law">
+<meta property="og:description" content="Original weekly data on artificial intelligence patent applications from public USPTO records, with charts and method.">
+<meta property="og:url" content="https://burbagelaw.com/data/">
+<meta property="og:site_name" content="Burbage Law, PC">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://burbagelaw.com/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Burbage Law. Developments: artificial intelligence and software patent law.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://burbagelaw.com/og-card.png">
+<link rel="alternate" type="application/rss+xml" title="Burbage Law — Developments" href="https://burbagelaw.com/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" data-nav="index" href="../index.html">Burbage<span>Law</span></a>
+  <nav class="site-nav" aria-label="Main"><a data-nav="index" href="../index.html">Home</a><a data-nav="services" href="../services.html">Services</a><a data-nav="about" href="../about.html">About</a><a data-nav="updates" href="../updates.html">Developments</a><a data-nav="data" href="../data/index.html" aria-current="page">Data</a><a data-nav="contact" href="../contact.html">Contact</a></nav>
+</div></header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Data</p>
+    <h1>Original data on artificial intelligence patents</h1>
+    <p class="lede">Figures computed from public USPTO records, published weekly: who is filing artificial intelligence
+      patent applications, on what, and what that means for anyone searching, filing or budgeting. Every edition states
+      its source, period and method.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="data-list"><article class="data-item">
+  <div class="data-thumb"><a href="2026-10-13-who-is-filing-ai-patent-applications.html"><img src="2026-10-13-chart1-ai-filings-by-company.png" alt="" loading="lazy"></a></div>
+  <div>
+    <p class="data-item-meta">2026-10-13 &middot; Who is filing on what, edition 1</p>
+    <h3><a class="entry-link" href="2026-10-13-who-is-filing-ai-patent-applications.html">Big-company AI patent publications rose sharply this summer, and the usual AI class misses 44% of them</a></h3>
+    <p class="summary">Published U.S. applications from eight of the largest AI companies, July 16 to October 8, 2026, compared with the same weeks of 2025.</p>
+  </div>
+</article></div>
+  </div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <div>&copy; 2026 Burbage Law, PC &middot; Salt Lake City, Utah</div>
+  <div class="foot-links">
+    <a href="tel:+14159393529">415.939.3529</a>
+    <a href="mailto:jon@burbagelaw.com">jon@burbagelaw.com</a>
+    <a data-nav="contact" href="../contact.html">Contact</a>
+    <a data-nav="disclaimer" href="../disclaimer.html">Disclaimer</a>
+    <a href="https://burbagelaw.com/feed.xml">RSS feed</a>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var f = document.getElementById('intake');
+  if (!f) return;
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var s = document.getElementById('form-status');
+    var name = f.name.value.trim(), email = f.email.value.trim();
+    if (!name || !email) { s.textContent = 'Please add your name and email so Jon can reply.'; return; }
+    var body = 'Name: ' + name + '\nCompany: ' + f.company.value.trim() +
+               '\nEmail: ' + email + '\nTopic: ' + f.topic.value +
+               '\n\n' + f.message.value.trim();
+    var url = 'mailto:jon@burbagelaw.com?subject=' + encodeURIComponent('Website enquiry — ' + name) +
+              '&body=' + encodeURIComponent(body);
+    s.textContent = 'Opening your email program. If nothing happens, write to jon@burbagelaw.com directly.';
+    window.location.href = url;
+  });
+})();
+</script>
+</body>
+</html>
