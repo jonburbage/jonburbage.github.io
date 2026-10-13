@@ -526,3 +526,18 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 .data-item h3 { margin-top: 6px; }
 .data-item .summary { margin-top: 8px; }
 @media (max-width: 640px) { .data-item { grid-template-columns: 1fr; gap: 12px; } .data-fig { margin-inline: 0; } }
+
+/* Patents page. Added 2026-10-13. */
+.pat-group { border-top: 1px solid var(--rule); }
+.pat-group:last-of-type { border-bottom: 1px solid var(--rule); }
+.pat-group > summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 16px 0; font-family: var(--f-display); font-size: 1.2rem; font-weight: 500; }
+.pat-group > summary::-webkit-details-marker { display: none; }
+.pat-group > summary::before { content: "+"; font-family: var(--f-mono); color: var(--accent); width: 1.2em; flex: none; }
+.pat-group[open] > summary::before { content: "\2212"; }
+.pat-group > summary > span:first-of-type { flex: 1; }
+.pat-count { font-family: var(--f-mono); font-size: .9rem; color: var(--ink-muted); }
+.pat-list { list-style: none; margin: 0 0 18px; padding: 0 0 0 1.2em; }
+.pat-list li { padding: 10px 0; border-top: 1px solid var(--rule-soft); }
+.pat-list a { font-weight: 500; }
+.pat-meta { display: block; margin-top: 3px; font-family: var(--f-mono); font-size: .8rem; color: var(--ink-muted); overflow-wrap: anywhere; }
+.pat-note { margin-top: 20px; color: var(--ink-muted); font-size: .92rem; }
