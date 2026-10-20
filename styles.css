@@ -550,3 +550,23 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 .pat-next { margin-top: 28px; }
 /* Keep a group opened from a link below the sticky menu bar, 2026-10-13 */
 .pat-group { scroll-margin-top: 88px; }
+
+/* Podcast: Thinking Makes It So (added 2026-10-20) */
+.pod-head { display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: start; }
+.pod-cover { width: 220px; height: auto; border: 1px solid var(--rule); box-shadow: var(--shadow); }
+.pod-quote { margin-top: 14px; font-family: var(--f-display); font-style: italic; font-size: 1.1rem; color: var(--ink); max-width: 52ch; }
+.pod-quote span { display: block; margin-top: 4px; font-family: var(--f-mono); font-style: normal; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted); }
+.pod-subscribe { margin-top: 22px; }
+.pod-list-h { margin-top: 8px; }
+.pod-ep { padding: 24px 0; border-bottom: 1px solid var(--rule-soft); }
+.pod-ep h3 { margin-top: 6px; }
+.pod-ep .summary { margin-top: 10px; }
+.pod-audio { display: block; width: 100%; margin-top: 14px; }
+.pod-covers-h { margin-top: 12px; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted); }
+.pod-covers { margin: 6px 0 0; padding-left: 1.1em; font-size: .95rem; }
+.pod-covers li { margin-top: 4px; }
+.pod-listen { margin-top: 22px; max-width: var(--measure); padding: 14px 16px; background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); }
+.pod-listen .eyebrow { margin: 0; }
+.pod-listen .pod-audio { margin-top: 10px; }
+.pod-listen .fine { margin-top: 8px; }
+@media (max-width: 720px) { .pod-head { grid-template-columns: 1fr; } .pod-cover { width: 160px; } }
