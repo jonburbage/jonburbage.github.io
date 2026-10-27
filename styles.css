@@ -570,3 +570,37 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 .pod-listen .pod-audio { margin-top: 10px; }
 .pod-listen .fine { margin-top: 8px; }
 @media (max-width: 720px) { .pod-head { grid-template-columns: 1fr; } .pod-cover { width: 160px; } }
+
+/* Data download and citation block on data editions. Added 2026-10-26. */
+.data-download a[download] { font-weight: 600; }
+.data-cite { font-family: var(--f-mono); font-size: .82rem; line-height: 1.55;
+  background: var(--accent-wash); padding: 12px 14px; border-left: 3px solid var(--accent);
+  overflow-wrap: anywhere; color: var(--ink); }
+
+/* Federal Circuit AI eligibility decision table (ai-eligibility.html). Added 2026-10-26. */
+.table-scroll { overflow-x: auto; margin-top: 18px; }
+.el-table { width: 100%; border-collapse: collapse; font-size: .92rem; line-height: 1.5; }
+.el-table th { text-align: left; font-weight: 600; font-size: .8rem; letter-spacing: .02em; color: var(--ink-muted);
+  border-bottom: 1px solid var(--rule); padding: 10px 12px 10px 0; }
+.el-table td { vertical-align: top; border-bottom: 1px solid var(--rule-soft); padding: 14px 12px 14px 0; }
+.el-table .el-date { white-space: nowrap; color: var(--ink-muted); }
+.el-table .el-case { min-width: 220px; }
+.el-cite { display: block; font-family: var(--f-mono); font-size: .76rem; color: var(--ink-muted); margin-top: 4px; }
+.el-result { display: inline-block; font-size: .78rem; font-weight: 600; padding: 2px 8px; border-radius: 3px; white-space: nowrap;
+  border: 1px solid var(--rule); color: var(--ink); }
+.el-ineligible { background: var(--paper); }
+.el-eligible { background: var(--accent-wash); border-color: var(--accent); color: var(--accent-ink); }
+.el-mixed, .el-remanded { background: var(--surface); border-style: dashed; }
+@media (max-width: 760px) {
+  .el-table thead { display: none; }
+  .el-table, .el-table tbody, .el-table tr, .el-table td { display: block; width: 100%; }
+  .el-table tr { border-bottom: 1px solid var(--rule); padding: 12px 0; }
+  .el-table td { border: 0; padding: 4px 0; }
+  .el-table td::before { content: attr(data-label); display: block; font-size: .72rem; font-weight: 600; color: var(--ink-muted);
+    text-transform: uppercase; letter-spacing: .04em; }
+  .el-table .el-case { min-width: 0; }
+}
+.el-table { table-layout: fixed; }
+.el-table .w-date { width: 11%; } .el-table .w-case { width: 25%; } .el-table .w-claim { width: 27%; }
+.el-table .w-res { width: 11%; } .el-table .w-why { width: 26%; }
+@media (max-width: 760px) { .el-table { table-layout: auto; } }
