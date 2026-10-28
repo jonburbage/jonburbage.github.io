@@ -606,11 +606,12 @@ form.intake button { justify-self: start; cursor: pointer; font: inherit; }
 @media (max-width: 760px) { .el-table { table-layout: auto; } }
 
 /* Client statements (Home and About). Added 2026-10-27. */
-.tm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-top: 8px; }
+.tm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-top: 8px; align-items: start; }
 .tm-card { margin: 0; padding: 26px 26px 22px; background: var(--surface); border: 1px solid var(--rule-soft); border-top: 2px solid var(--accent); border-radius: 4px; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
 .tm-card blockquote { margin: 0; }
 .tm-card blockquote p { font-family: var(--f-display); font-size: 1.18rem; line-height: 1.55; color: var(--ink); margin: 0; }
-.tm-card blockquote p::before { content: "\201C"; } .tm-card blockquote p::after { content: "\201D"; }
+.tm-card blockquote p + p { margin-top: .8em; }
+.tm-card blockquote p:first-child::before { content: "\201C"; } .tm-card blockquote p:last-child::after { content: "\201D"; }
 .tm-card figcaption { margin-top: auto; display: flex; flex-direction: column; gap: 2px; font-size: .9rem; }
 .tm-name { font-weight: 600; color: var(--ink); }
 .tm-title, .tm-also { color: var(--ink-muted); }
