@@ -9,6 +9,36 @@
   <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
   <image><url>https://burbagelaw.com/og-card.png</url><title>Burbage Law — Developments</title><link>https://burbagelaw.com/updates.html</link></image>
   <item>
+    <title>Four in ten big-company AI patent publications continue earlier applications, and most of their parents are already patents</title>
+    <link>https://burbagelaw.com/data/2026-10-30-big-ai-filers-publish-continuations.html</link>
+    <guid isPermaLink="true">https://burbagelaw.com/data/2026-10-30-big-ai-filers-publish-continuations.html</guid>
+    <pubDate>Fri, 30 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Data</category>
+    <description>AI-related U.S. applications that eight large AI companies published on October 29, 2026, and in the 13 weekly publication dates from August 6 to October 29, 2026, sorted by whether each continues an earlier U.S. application.
+
+On Thursday, October 29, 2026, the eight companies tracked in this series published 80 AI-related U.S. applications. Alphabet had 29, Microsoft 25, Nvidia 18, Apple 5, OpenAI 2 and Meta 1. Amazon and Anthropic had none.
+
+Only 39 of the 80 were first publications of a new U.S. filing. Another 27 were continuations or divisionals of earlier U.S. applications, and 25 of those 27 continue an application that has since issued as a patent. The remaining 14 entered the United States from international applications under the Patent Cooperation Treaty. The oldest continuation published this week traces to a provisional application filed in January 2015.
+
+This week was not unusual. Over the last 13 publication weeks, 397 of the eight companies’ 995 AI-related publications, or 40%, were continuations or divisionals. For 371 of the 397, the parent has since issued as a patent.
+
+The oldest family is Alphabet’s. Its application titled “Image processing using normalization layers” (US 2026/0340387) is the sixth U.S. nonprovisional application in a chain that began with a provisional application filed January 28, 2015. Each of the five earlier applications has issued as a patent, starting with U.S. Patent 10,417,562. Its first-named inventor is Sergey Ioffe, and its text describes batch normalization layers. Alphabet’s “Neural network compute tile” (US 2026/0339665) follows the same pattern from an October 2016 filing, with five earlier applications that are now patents.
+
+The newer material sits in the first publications. Of the 39, 38 have an earliest priority date in April 2025, as expected: 35 U.S.C. 122(b) requires publication promptly after 18 months from the earliest filing date claimed. They include two OpenAI applications on safety checks, one for the output of a generative response engine (US 2026/0340286) and one for audio output (US 2026/0341299), and two on software agents: Alphabet’s “Selection of agentic models for task completion based on model interconnectivity” (US 2026/0340490) and Microsoft’s “Vector communications between artificial intelligent agents” (US 2026/0339761).
+
+Every company in the series files them. Over the 13 weeks, continuations and divisionals were 53% of Apple’s AI-related publications (50 of 95) and 49% of Nvidia’s (119 of 244), against 36% of Alphabet’s and 31% of Microsoft’s. The continuation counts for Meta (12), OpenAI (10) and Amazon (12) are too small to read as a pattern. Continuations are not new for these companies: on the matching Thursday of 2025, October 30, 18 of their 51 AI-related publications were continuations, all of them of applications that later issued. One week is too small a sample to compare rates.
+
+The weekly share ran from 27% to 66%. The high was September 24, when 63 of 96 AI-related publications were continuations. We checked that each application number appears once and that each of the 63 records names an earlier U.S. application it continues or divides from. Two of this week’s continuations were also opened in a second source, Justia, and match the USPTO records, down to the chain of earlier applications.
+
+Upon review, I conclude that the spike has two causes, and both come from the publication clock. A continuation claims a priority date that is usually years old, so the USPTO publishes it soon after it is filed: the median continuation in these 13 weeks published 4.4 months after filing, against 18 months for first publications. Continuations filed in the same month therefore publish together. Of the 84 continuations in the window that were filed in May 2026, 77 published on September 17 or September 24; 37 of them were among the 63. The same week had only 19 first publications, the fewest of the 13 weeks, against a weekly median of 34. The records do not show why the companies filed so many continuations in the spring of 2026.
+
+A weekly count of publications overstates how much new technology these companies are disclosing. In this window, fewer than half of their AI-related publications were first publications of new U.S. filings. In diligence on a target’s AI portfolio, I would not read a rising publication count as a rising rate of invention until its continuations are separated out.
+
+When an examiner cites a recently published application against your claims, check its chain of earlier applications before arguing about dates. Four in ten of these companies’ AI publications continue an earlier application, and one published this week can carry an effective filing date in 2015, and it is prior art as of that date for what the earlier application describes (35 U.S.C. 102(a)(2) and 102(d)).
+
+The figures also show how the largest filers use continuations. A continuation must be filed while its parent is still pending (35 U.S.C. 120), and these companies keep families open that way for a decade, which lets them present new claims on a 2015 or 2016 priority date, aimed at products that did not exist when they first filed, so long as the original text supports those claims.</description>
+  </item>
+  <item>
     <title>Big-company AI applications with “agent” in the title tripled, and almost all trace to early 2025</title>
     <link>https://burbagelaw.com/data/2026-10-23-what-big-ai-filers-are-claiming.html</link>
     <guid isPermaLink="true">https://burbagelaw.com/data/2026-10-23-what-big-ai-filers-are-claiming.html</guid>
