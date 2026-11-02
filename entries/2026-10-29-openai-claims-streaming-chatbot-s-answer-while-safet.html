@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJJ3L3F9YP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GJJ3L3F9YP');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAI claims streaming a chatbot&#x27;s answer while the safety check runs behind it, so long as the check stays within a set number of tokens — Burbage Law</title>
+<meta name="description" content="In my view claim 1 is broad: streaming moderation that lets output run ahead of the check by a bounded amount appears to read on it. Microsoft&#x27;s Azure OpenAI documentation describe…">
+<link rel="canonical" href="https://burbagelaw.com/entries/2026-10-29-openai-claims-streaming-chatbot-s-answer-while-safet.html">
+<meta property="og:title" content="OpenAI claims streaming a chatbot&amp;#x27;s answer while the safety check runs behind it, so long as the check stays within a set number of tokens — Burbage Law">
+<meta property="og:description" content="In my view claim 1 is broad: streaming moderation that lets output run ahead of the check by a bounded amount appears to read on it. Microsoft&#x27;s Azure OpenAI documentation describe…">
+<meta property="og:url" content="https://burbagelaw.com/entries/2026-10-29-openai-claims-streaming-chatbot-s-answer-while-safet.html">
+<meta property="og:site_name" content="Burbage Law, PC">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://burbagelaw.com/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Burbage Law. Developments: artificial intelligence and software patent law.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://burbagelaw.com/og-card.png">
+<link rel="alternate" type="application/rss+xml" title="Burbage Law — Developments" href="https://burbagelaw.com/feed.xml">
+<meta property="article:published_time" content="2026-10-29">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="wordmark" data-nav="index" href="../index.html">Burbage<span>Law</span></a>
+  <nav class="site-nav" aria-label="Main"><a data-nav="services" href="../services.html">Services</a><a data-nav="about" href="../about.html">About</a><a data-nav="patents" href="../patents.html">Patents</a><a data-nav="updates" href="../updates.html" aria-current="page">Developments</a><a data-nav="data" href="../data/index.html">Data</a><a data-nav="podcast" href="../podcast.html">Podcast</a><a data-nav="contact" href="../contact.html">Contact</a></nav>
+</div></header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="../updates.html">Developments</a></p>
+    <h1>OpenAI claims streaming a chatbot&#x27;s answer while the safety check runs behind it, so long as the check stays within a set number of tokens</h1>
+    <div class="updates-meta" style="border-bottom:0;padding-bottom:0">
+      <span>2026-10-29</span><span class="tag">Filings</span>
+    </div>
+    <div class="pod-listen">
+      <p class="eyebrow">Listen &middot; Thinking Makes It So, 2026-11-02 &middot; 9 min</p>
+      <audio class="pod-audio" controls preload="none" src="https://media.transistor.fm/ee6da007/c266e1fc.mp3"><a href="https://media.transistor.fm/ee6da007/c266e1fc.mp3">Download the episode (MP3)</a></audio>
+      <p class="fine"><a href="../podcast.html">All episodes</a> &middot; Subscribe: <a href="https://podcasts.apple.com/podcast/thinking-makes-it-so/id6825121436">Apple Podcasts</a> &middot; <a href="https://open.spotify.com/show/346z4f599v0wkOVil3Gz07">Spotify</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:22px">
+  <div class="wrap">
+    <div class="measure">
+      <p class="cite">United States Patent Application Publication No. 2026/0340286 A1, OpenAI OpCo, LLC, &quot;Safety Engine Processing of Generative Response Engine Output,&quot; Application No. 19/189,837, filed April 25, 2025, published October 29, 2026; and United States Patent Application Publication No. 2026/0341299 A1, OpenAI OpCo, LLC, &quot;Safety Classifiers for Audio Output,&quot; Application No. 19/188,100, filed April 24, 2025, published October 29, 2026</p>
+      <p style="margin-top:18px">Claim 1 has three steps: a safety engine receives a stream of tokens output by a generative response engine, each token assigned an index; it processes a token with a safety plugin; and tokens are output to the front end while the difference between the index of the output token and the index of the token the plugin is processing is less than a buffer. The dependent claims add a main queue that feeds the safety queue and feeds a duplicate stream to an output queue (claim 2), a stop token that halts output when a token cannot be output and carries metadata for a message to the user (claim 5), a message telling the generative response engine to stop (claim 6), and a pause of the front end when the gap reaches the buffer (claim 7). The specification calls a buffer of zero synchronous processing, gives each safety plugin its own buffer, says testing or simulations can be used to pick a buffer that introduces no perceptible lag, and lets the front end resume after a timeout if the check stays behind. The companion application, filed the day before and published the same day, claims a safety engine that has a classifier score a first and a second window of an audio stream for similarity to a reference voice, the scores usable in deciding whether to output the windows. Neither application claims priority to an earlier filing, and both are pending, with no office action of record in either file.</p>
+      <div class="takeaway" style="margin-top:22px"><b>What it changes</b>In my view claim 1 is broad: streaming moderation that lets output run ahead of the check by a bounded amount appears to read on it. Microsoft&#x27;s Azure OpenAI documentation describes an Asynchronous Filter mode that returns content token by token while the content filters run asynchronously, with the filtering signal guaranteed within about 1,000 characters of the violating content and the stream stopped on a violation, and says the mode is available in API version 2024-02-01 and later. If that mode was public before April 25, 2025, my read is that claim 1 will have a hard time in examination, and that the claims most likely to survive are those on what the system does when the check falls behind: the pause in claim 7 and its system counterpart, claim 14. For anyone drafting an application on output moderation for a streaming model, my suggestion is to write the independent claim around the system&#x27;s response when the check lags, not around the existence of a lag, because the Azure documentation already describes a bounded gap between output and check.</div>
+      <p class="entry-topics"><span>More on</span> <a href="../archive.html?topic=filings">What the AI companies are filing</a> &middot; <a href="../archive.html?topic=prior-art">Prior art, public disclosure and obviousness</a></p>
+    </div>
+    <nav class="entry-nav"><div><a href="2026-10-22-openai-claims-buffer-turns-reasoning-model-s-hidden.html">OpenAI claims the buffer that turns a reasoning model&#x27;s hidden chain of thought into step summaries, and a continuation claims the timeline that displays them &rarr;</a></div></nav>
+    <p style="margin-top:30px"><a href="../updates.html">&larr; All recent developments</a> &nbsp;&middot;&nbsp; <a href="../archive.html">Search all developments</a></p>
+    <p class="measure about-note">Burbage Law is the practice of Jon Burbage, a registered patent attorney. 342 United States patents have issued from applications he wrote; the full list is on the <a href="../patents.html">Patents page</a>. <a href="../about.html">More about Jon Burbage</a>.</p>
+    <p class="fine" style="margin-top:26px">This is general information about a published decision,
+      agency guidance or piece of legislation. It is not legal advice and does not create an
+      attorney-client relationship. Items concerning offices outside the United States are reported
+      for information only and are not counsel on the law of those countries.</p>
+  </div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <div>&copy; 2026 Burbage Law, PC &middot; Salt Lake City, Utah</div>
+  <div class="foot-links">
+    <a href="tel:+14159393529">415.939.3529</a>
+    <a href="mailto:jon@burbagelaw.com">jon@burbagelaw.com</a>
+    <a data-nav="contact" href="../contact.html">Contact</a>
+    <a data-nav="disclaimer" href="../disclaimer.html">Disclaimer</a>
+    <a href="https://burbagelaw.com/feed.xml">RSS feed</a>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var f = document.getElementById('intake');
+  if (!f) return;
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var s = document.getElementById('form-status');
+    var name = f.name.value.trim(), email = f.email.value.trim();
+    if (!name || !email) { s.textContent = 'Please add your name and email so Jon can reply.'; return; }
+    var body = 'Name: ' + name + '\nCompany: ' + f.company.value.trim() +
+               '\nEmail: ' + email + '\nTopic: ' + f.topic.value +
+               '\n\n' + f.message.value.trim();
+    var url = 'mailto:jon@burbagelaw.com?subject=' + encodeURIComponent('Website enquiry — ' + name) +
+              '&body=' + encodeURIComponent(body);
+    s.textContent = 'Opening your email program. If nothing happens, write to jon@burbagelaw.com directly.';
+    window.location.href = url;
+  });
+})();
+</script>
+</body>
+</html>
