@@ -6,7 +6,7 @@
   <atom:link href="https://burbagelaw.com/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Developments in United States, European and Asian patent law affecting artificial intelligence and software inventions, each with what it changes for a company holding or seeking patents.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
   <image><url>https://burbagelaw.com/og-card.png</url><title>Burbage Law — Developments</title><link>https://burbagelaw.com/updates.html</link></image>
   <item>
     <title>Four in ten big-company AI patent publications continue earlier applications, and most of their parents are already patents</title>
@@ -123,6 +123,18 @@ Across the eight companies, AI-related applications whose titles name an agent o
 Many of these filings are not in G06N at all. They are classified under natural language processing (G06F 40), computer vision (G06V) or speech (G10L) instead. Across the seven companies with at least 20 AI-related publications, G06N missed 419 of 949, or 44%. The gap runs from 37% for Alphabet to 71% for Meta and 77% for Apple.
 
 A landscape, freedom-to-operate or competitor-monitoring search that relies on G06N alone will miss a large share of the relevant art, and for some companies most of it. Add G06F 40, G06V and G10L, and search titles and claims for model and agent terms.</description>
+  </item>
+  <item>
+    <title>OpenAI claims streaming a chatbot's answer while the safety check runs behind it, so long as the check stays within a set number of tokens</title>
+    <link>https://burbagelaw.com/entries/2026-10-29-openai-claims-streaming-chatbot-s-answer-while-safet.html</link>
+    <guid isPermaLink="true">https://burbagelaw.com/entries/2026-10-29-openai-claims-streaming-chatbot-s-answer-while-safet.html</guid>
+    <pubDate>Thu, 29 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Filings</category>
+    <description>Claim 1 has three steps: a safety engine receives a stream of tokens output by a generative response engine, each token assigned an index; it processes a token with a safety plugin; and tokens are output to the front end while the difference between the index of the output token and the index of the token the plugin is processing is less than a buffer. The dependent claims add a main queue that feeds the safety queue and feeds a duplicate stream to an output queue (claim 2), a stop token that halts output when a token cannot be output and carries metadata for a message to the user (claim 5), a message telling the generative response engine to stop (claim 6), and a pause of the front end when the gap reaches the buffer (claim 7). The specification calls a buffer of zero synchronous processing, gives each safety plugin its own buffer, says testing or simulations can be used to pick a buffer that introduces no perceptible lag, and lets the front end resume after a timeout if the check stays behind. The companion application, filed the day before and published the same day, claims a safety engine that has a classifier score a first and a second window of an audio stream for similarity to a reference voice, the scores usable in deciding whether to output the windows. Neither application claims priority to an earlier filing, and both are pending, with no office action of record in either file.
+
+What it changes: In my view claim 1 is broad: streaming moderation that lets output run ahead of the check by a bounded amount appears to read on it. Microsoft's Azure OpenAI documentation describes an Asynchronous Filter mode that returns content token by token while the content filters run asynchronously, with the filtering signal guaranteed within about 1,000 characters of the violating content and the stream stopped on a violation, and says the mode is available in API version 2024-02-01 and later. If that mode was public before April 25, 2025, my read is that claim 1 will have a hard time in examination, and that the claims most likely to survive are those on what the system does when the check falls behind: the pause in claim 7 and its system counterpart, claim 14. For anyone drafting an application on output moderation for a streaming model, my suggestion is to write the independent claim around the system's response when the check lags, not around the existence of a lag, because the Azure documentation already describes a bounded gap between output and check.
+
+United States Patent Application Publication No. 2026/0340286 A1, OpenAI OpCo, LLC, "Safety Engine Processing of Generative Response Engine Output," Application No. 19/189,837, filed April 25, 2025, published October 29, 2026; and United States Patent Application Publication No. 2026/0341299 A1, OpenAI OpCo, LLC, "Safety Classifiers for Audio Output," Application No. 19/188,100, filed April 24, 2025, published October 29, 2026</description>
   </item>
   <item>
     <title>OpenAI claims the buffer that turns a reasoning model's hidden chain of thought into step summaries, and a continuation claims the timeline that displays them</title>
@@ -267,6 +279,18 @@ United States Patent Application Publication No. 2026/0311065 A1, Google LLC, "R
 What it changes: For an artificial intelligence program the review matters more than elsewhere because the technology turns over faster than the patent process runs: an application drafted to a 2022 training method reaches its first office action after the team has moved on, and its foreign filing deadline arrives before anyone knows whether the feature survived. Put the three expensive dates, foreign filing, national phase and the response to the first office action, on the roadmap owner's calendar rather than the attorney's alone, and require a one-paragraph written reason to proceed, naming the product or competitor the claims read on. Keep continuations only in families still mapped to the roadmap, and let the rest issue or lapse. When the budget is challenged, the list of what the program chose not to pay for, with the reasons, is a better defense than the count of what it filed, because it shows the spending is being managed rather than accumulated.
 
 Practice note, Burbage Law, PC, October 6, 2026</description>
+  </item>
+  <item>
+    <title>On remittal, the UK Office refuses Emotional Perception's neural network for lack of inventive step, because a recommendation that is only subjectively better is not a technical result</title>
+    <link>https://burbagelaw.com/entries/2026-10-01-remittal-uk-office-refuses-emotional-perception-s-ne.html</link>
+    <guid isPermaLink="true">https://burbagelaw.com/entries/2026-10-01-remittal-uk-office-refuses-emotional-perception-s-ne.html</guid>
+    <pubDate>Thu, 01 Oct 2026 12:00:00 +0000</pubDate>
+    <category>UK</category>
+    <description>After the Supreme Court sent the application back for the Office to apply its new approach, aligned with the EPO's G 1/19, the Hearing Officer heard it on 4 August 2026 and refused it under section 18(3) of the Patents Act 1977 for lack of inventive step. He identified the technical character of the claims as computer hardware running a program that selects and outputs a "semantically better" file, and read "semantically" from the description to mean subjective human meaning, especially perceived emotion. He found the file "'better' only in a subjective psychological sense" and noted that it "was not found faster, nor using less computing power than would be done in prior art systems" (para 53). The training objectives that the applicant argued closed the "semantic gap" were therefore ineligible differences, and what remained, hardware running a program that outputs a file, was obvious over common general knowledge (paras 55 and 56). He also said that if a semantically better file were a technical result, he was "confident" the application would be inventive over the prior art (paras 42 and 43). The period to appeal ran 28 days from the decision (para 60).
+
+What it changes: The case came down to one characterization, and the decision makes that plain (paras 42, 43 and 55): treat the result as technical and the application would be inventive; treat it as subjective and the training details drop out of the inventive step analysis. As I read the decision, it is on firm ground under the European approach, and the EPO examining division reached the same result on the parallel European application, though Lewis Silkin's commentary criticizes it for not working through the training features one by one. In my view an appeal would face a description that, as the decision reads it, says human judgment "trumps" measured properties. For a machine learning recommendation or search application that will be filed in the United Kingdom or at the EPO, my advice is that the description carry the technical effect from the day it is filed, such as fewer computations or faster retrieval, because the hearing officer read "better" in the claim through what the description said it meant. When reviewing a draft description for such an application, consider whether it says anything an examiner could treat as technical, or only that users will like the result.
+
+Emotional Perception AI Ltd, Application No. GB1904713.3, Decision of the Hearing Officer (Stephen Brown), BL O/0894/26 (Intellectual Property Office, 1 October 2026), on remittal from Emotional Perception AI Ltd v Comptroller-General of Patents, Designs and Trade Marks [2026] UKSC 3 (11 February 2026)</description>
   </item>
   <item>
     <title>A system prompt is a trade secret only for as long as the model will not repeat it</title>
@@ -699,30 +723,6 @@ Getty Images (US) Inc v Stability AI Ltd [2025] EWHC 2863 (Ch) (4 November 2025)
 What it changes: For a company defending against software or artificial intelligence patents, the Board is now a forum the Director opens case by case, usually without explanation, and the invalidity case should be budgeted and built for district court from the start, with the petition as an option rather than the plan. If the proposed rules are adopted as written, an instituted petition would cost the petitioner its anticipation and obviousness defenses everywhere else, so the choice of forum for the best prior art would have to be made once, early, and with the trial team in the room. Defendants sued in fast districts would rarely qualify at all. Patent owners holding older software and machine learning patents gain bargaining power in licensing and should assert where trial dates come quickly. The memorandum is in effect; the rules are proposed and may change before adoption.
 
 Memorandum, "Director Institution of AIA Trial Proceedings" (Oct. 17, 2025), from John A. Squires, Under Secretary of Commerce for Intellectual Property and Director of the United States Patent and Trademark Office, to all Patent Trial and Appeal Board judges; Revision to Rules of Practice before the Patent Trial and Appeal Board, 90 Fed. Reg. 48335 (Oct. 17, 2025) (proposed rule)</description>
-  </item>
-  <item>
-    <title>Appeals Review Panel finds machine learning claims eligible on efficiency-based technical improvements</title>
-    <link>https://burbagelaw.com/entries/2025-09-26-appeals-review-panel-finds-machine-learning-claims-e.html</link>
-    <guid isPermaLink="true">https://burbagelaw.com/entries/2025-09-26-appeals-review-panel-finds-machine-learning-claims-e.html</guid>
-    <pubDate>Fri, 26 Sep 2025 12:00:00 +0000</pubDate>
-    <category>PTAB</category>
-    <description>The USPTO Director convened an Appeals Review Panel to review a Board rejection of machine learning method claims under § 101. The panel disagreed with the Board's step-two analysis and held that technological advantages of the claimed method, including reduced storage requirements and efficiency gains, amount to a practical application of the abstract idea where those advantages are reflected in the claim language itself.
-
-What it changes: This is the single most useful citation available in prosecution right now for a machine learning claim carrying a resource-efficiency benefit. It works only if the efficiency is recited in the claim, not merely asserted in the specification or the response.
-
-Ex parte Desjardins, Appeals Review Panel decision (Sept. 26, 2025) (convened sua sponte by the Director)</description>
-  </item>
-  <item>
-    <title>A federal court preliminarily approves Anthropic's $1.5 billion settlement over pirated training books, about $3,000 a work</title>
-    <link>https://burbagelaw.com/entries/2025-09-25-federal-court-preliminarily-approves-anthropic-s-1-5.html</link>
-    <guid isPermaLink="true">https://burbagelaw.com/entries/2025-09-25-federal-court-preliminarily-approves-anthropic-s-1-5.html</guid>
-    <pubDate>Thu, 25 Sep 2025 12:00:00 +0000</pubDate>
-    <category>Copyright</category>
-    <description>After Judge William Alsup's June 23, 2025 order held that training on books was fair use but that pirated library copies were not, the court on July 17, 2025 certified a "LibGen &amp; PiLiMi Pirated Books Class," and trial was set for December 1, 2025. On September 5 the class moved for preliminary approval of a settlement. Anthropic will pay at least $1.5 billion plus interest into a non-reversionary fund; with around 500,000 works in the class, class counsel estimated a gross recovery of $3,000 per work, and Anthropic will pay a further $3,000 for each work added above 500,000. Anthropic will destroy the original files it obtained from Library Genesis and the Pirate Library Mirror and copies originating from them, subject to preservation obligations. The release covers only past conduct through August 25, 2025, and releases no claim, past or future, arising from allegedly infringing outputs of Anthropic's models. Class counsel called it the largest publicly reported copyright recovery and compared the per-work figure with the $750 statutory minimum and the $200 floor for innocent infringement. Funds are allocated equally per work. On September 25, after a September 8 hearing and written questions from the court, Judge Alsup granted preliminary approval of the class settlement, the plan of distribution and the plan for notice.
-
-What it changes: Pirated training data now has a price per work, and a model budget that does not carry acquisition or licensing cost for its corpus is missing a line. For the patent program the consequence is in diligence and continuity. A patent on a model, a training method or a product built on the model does nothing to offset liability for the corpus the model learned from, so any acquisition of a company, a portfolio or a model license should ask for the acquisition record of the training data alongside the patent schedule. The destruction term shows that a settlement can take datasets out of service, and a product line whose patented features depend on a model trained on those datasets needs a retraining plan. Output claims were expressly left open, so the filtering and attribution mechanisms that keep a model from reproducing its training text remain worth both engineering investment and patent filings.
-
-Bartz v. Anthropic PBC, No. 3:24-cv-05417-WHA (N.D. Cal. Sept. 25, 2025) (Alsup, J.) (minute entry granting preliminary approval of class settlement, Dkt. 427), on the Motion for Preliminary Approval of Class Settlement (Dkt. 363, filed Sept. 5, 2025)</description>
   </item>
 </channel>
 </rss>
