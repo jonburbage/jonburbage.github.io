@@ -1,7 +1,33 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "note": "Developments in United States, European and Asian patent law affecting software and artificial intelligence inventions, together with the regulation and policy that shapes what clients can build and ship. Newest first.",
   "entries": [
+    {
+      "date": "2026-11-09",
+      "tag": "Filings",
+      "court": false,
+      "title": "Google claims training a machine-learned model to fold third-party content, such as advertisements, into its answers by weighing a learned satisfaction score against predicted interaction with that content",
+      "cite": "United States Patent Application Publication No. 2026/0350464 A1, Google LLC, \"Multi-Stage Training Process for Sequence Models,\" Application No. 19/196,371, filed May 1, 2025, published November 5, 2026",
+      "summary": "Claim 1 trains two models. A reward model is trained with reinforcement learning from human feedback to predict a user satisfaction metric for an output that contains a third-party content item, an output the claim says the reward model itself generates from a prompt holding a user query and one or more such items. A second model is then trained with a loss function that combines the reward model's satisfaction metric with predicted interaction metrics for a third-party content item placed in the second model's output, and the trained model answers a later query with natural language output combined with one or more third-party content items. The specification says third-party content items can include sponsored content such as advertisements, gives predicted revenue and click-through rate as examples of interaction metrics, and states the technical problem as balancing user satisfaction and third-party content presentation without one taking over the other. The USPTO's Open Data Portal shows the application awaiting its first examination.",
+      "takeaway": "My reading is that Google is claiming the training that teaches a model where third-party content belongs in an answer, not only the act of inserting it, and the revenue and click-through examples make advertising the obvious use. A training-method claim will be hard to enforce if it issues, because training happens on the other party's servers and only the last step of claim 1, an answer that combines text with third-party items, can be seen from outside; for now the claims are pending, and nothing can be enforced unless a patent issues. The published claim set also has mechanical problems an examiner can be expected to raise. Claims 1, 8 and 16 list the loss function's components as \"(i)\" and \"(iii)\" with no \"(ii)\"; claim 16 covers \"transitory or non-transitory\" computer readable media, which the Office rejects under 35 U.S.C. \u00a7 101 because a transitory signal is not within the statutory categories (In re Nuijten); and claims 17 and 19, and through them claims 18 and 20, refer to \"the one or more non-transitory computer readable media of claim 16,\" a narrower term than the \"transitory or non-transitory\" media claim 16 recites. Each is a routine fix by amendment, and the fix to claim 16 narrows it to non-transitory media, which is where it belonged from the start.",
+      "topics": [
+        "filings",
+        "eligibility"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "tag": "Filings",
+      "court": false,
+      "title": "OpenAI claims matching a user's query against a policy database and sending the matching policy guidance to the model when it answers",
+      "cite": "United States Patent Application Publication No. 2026/0350367 A1, OpenAI OpCo, LLC, \"Conditional Inference-Time Policy Enforcement System for Generative AI Models,\" Application No. 19/353,131, filed October 8, 2025, claiming priority to United States Provisional Patent Application No. 63/798,123, filed May 1, 2025, published November 5, 2026",
+      "summary": "Claim 1 has four steps: access user message information for a query, compare it with a set of policies stored in a policy database, determine that it corresponds with a policy, and send that policy's guidance to the generative model for tailoring a response. Independent claim 15 adds the mechanism: the guidance goes to the model as a temporary system message, and claim 16 deletes that message from the model's thread once the model has responded; claim 7 adds modifying a policy without modifying the model's parameters. The background says hard-coded instructions in static system messages lack contextual awareness, and names voting information, medical advice and legal guidance as domains where inaccurate answers pose compliance and safety risks. The USPTO's Open Data Portal shows the application awaiting its first examination.",
+      "takeaway": "In my view claim 1 as published comes close to describing retrieval of a policy text into the model's context, and the specification's own background acknowledges that instructions were already being placed in system messages. I expect claims 1 and 10 to meet prior art and the application to rest on claim 15, where the guidance arrives as a temporary system message and, in claim 16, is deleted once the model has answered. That is a sensible structure: OpenAI filed one independent claim at the broadest reading and another at the mechanism, so the medium claim is already written at the narrower scope if claim 1 falls, and claim 2, which adds the temporary system message, gives OpenAI a ready amendment for its method claim. If you are drafting guardrail or moderation claims, consider the same arrangement, with one independent claim that recites how the guidance enters the model's context, as claim 15 does, alongside the broad one.",
+      "topics": [
+        "filings",
+        "prior-art"
+      ]
+    },
     {
       "date": "2026-11-02",
       "tag": "Filings",
