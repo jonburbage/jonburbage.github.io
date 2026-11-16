@@ -6,7 +6,7 @@
   <atom:link href="https://burbagelaw.com/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Developments in United States, European and Asian patent law affecting artificial intelligence and software inventions, each with what it changes for a company holding or seeking patents.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 09 Nov 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 12:00:00 +0000</lastBuildDate>
   <image><url>https://burbagelaw.com/og-card.png</url><title>Burbage Law — Developments</title><link>https://burbagelaw.com/updates.html</link></image>
   <item>
     <title>Seven in ten big-company AI applications published since late August have no examiner yet</title>
@@ -173,6 +173,30 @@ Across the eight companies, AI-related applications whose titles name an agent o
 Many of these filings are not in G06N at all. They are classified under natural language processing (G06F 40), computer vision (G06V) or speech (G10L) instead. Across the seven companies with at least 20 AI-related publications, G06N missed 419 of 949, or 44%. The gap runs from 37% for Alphabet to 71% for Meta and 77% for Apple.
 
 A landscape, freedom-to-operate or competitor-monitoring search that relies on G06N alone will miss a large share of the relevant art, and for some companies most of it. Add G06F 40, G06V and G10L, and search titles and claims for model and agent terms.</description>
+  </item>
+  <item>
+    <title>OpenAI claims language-model agents that write a threat model of an application and check a function, or a code commit, against it</title>
+    <link>https://burbagelaw.com/entries/2026-11-16-openai-claims-language-model-agents-write-threat-mod.html</link>
+    <guid isPermaLink="true">https://burbagelaw.com/entries/2026-11-16-openai-claims-language-model-agents-write-threat-mod.html</guid>
+    <pubDate>Mon, 16 Nov 2026 12:00:00 +0000</pubDate>
+    <category>Filings</category>
+    <description>The two applications share three inventors and one provisional application, and they divide the same idea by the unit of code examined. In Publication No. 2026/0350180, claim 1 retrieves a function from the application's function repository, ranks its vulnerability using a call graph of how the application's functions relate, has a large language model generate a threat model as a structured data object, and has a large language model analyze the function together with the threat model to produce a threat object. Claim 1 of Publication No. 2026/0350179 is shorter: it retrieves a commit, has a large language model generate a threat model, and has a generative threat analysis agent analyze the commit with the threat model, with no ranking or call graph; its claim 5 adds a directed graph of the modified functions' calls, annotated with taint attributes through schema-constrained prompts, and a threat risk score for the commit. Claim 6 of each application builds a runtime threat environment holding a cloned version of the function or commit and generates a validated threat object confirming the threat from the clone's execution; in the function application, the large language model does this inside that environment. The USPTO's Open Data Portal shows both applications awaiting first examination.
+
+What it changes: My reading is that OpenAI is staking ground in security agents that review code, and that the claims it keeps will be the dependent ones. Claim 1 of each application recites the steps of a security review carried out with a language model, and the commit application's own background says that some existing systems already use large language models to scan code for common patterns or known bugs. I expect both applications to settle on their mechanisms: the taint annotation and risk score of claim 5 in the commit application, and the confirmation inside a cloned runtime environment that claim 6 of each application recites. If you are drafting claims for an agent that finds defects in code, consider writing at least one independent claim that includes confirming the finding by running the code in an isolated environment, rather than holding that step, as OpenAI did, only in dependent claims.
+
+United States Patent Application Publication Nos. 2026/0350180 A1, "Detecting Vulnerabilities in Computer Functions Utilizing Generative Model Agents," Application No. 19/365,022, and 2026/0350179 A1, "Detecting Vulnerabilities in Code Commits Utilizing Generative Model Agents," Application No. 19/364,425, OpenAI OpCo, LLC, both filed October 21, 2025, both claiming priority to United States Provisional Patent Application No. 63/798,122, filed May 1, 2025, both published November 5, 2026</description>
+  </item>
+  <item>
+    <title>OpenAI filed a continuation on generating and editing apps inside another application before the parent patent issued</title>
+    <link>https://burbagelaw.com/entries/2026-11-16-openai-filed-continuation-generating-editing-apps-in.html</link>
+    <guid isPermaLink="true">https://burbagelaw.com/entries/2026-11-16-openai-filed-continuation-generating-editing-apps-in.html</guid>
+    <pubDate>Mon, 16 Nov 2026 12:00:00 +0000</pubDate>
+    <category>Filings</category>
+    <description>Claim 1 receives a prompt in an outer application to generate an inner application, obtains code that includes at least one function corresponding to the prompt's natural language description, executes it, and renders the inner application's user interface in the outer application's main area. It then determines a modification request from user input or from an agentic action generated by the model, obtains modification instructions from the model, applies them and updates the interface. Claim 2 makes the instructions a patch to a module, claim 3 adds a dependency graph relating that module to others, and claim 4 has the patch change at least one of source code, styling information, a configuration file, a dependency manifest or package metadata. The USPTO's file history shows the parent examined under Track One prioritized examination, allowed on March 10, 2026, and issued as Patent No. 12,675,262 less than eleven months after filing, with no pre-grant publication listed; this continuation was filed two days after the parent's issue fee was received and twenty-five days before the parent issued.
+
+What it changes: The sequence matters more than any one claim. OpenAI obtained the parent patent quickly through prioritized examination and kept the family open with a continuation filed before the parent issued, so it can pursue claims different from the parent's while keeping the May 5, 2025 priority date for whatever the provisional supports. Claim 1 is broad: it covers generating, running and modifying an app from a prompt without saying how the modification is made, and I expect the examiner to look hard for earlier systems that generated and ran an application from a prompt; the patch with a dependency graph in claims 2 and 3 is the narrower position to fall back on. When an allowance arrives on a family that covers a product you ship, decide on a continuation while the parent is still pending; it must be filed before the parent issues, and filing before the issue fee is paid leaves the most room.
+
+United States Patent Application Publication No. 2026/0349689 A1, OpenAI OpCo, LLC, "Online Development Environment Using Generative Response Engine," Application No. 19/706,496, filed June 12, 2026, published November 5, 2026, a continuation of Application No. 19/303,790, filed August 19, 2025 and issued as United States Patent No. 12,675,262 on July 7, 2026, which claims priority to United States Provisional Patent Application No. 63/800,246, filed May 5, 2025</description>
   </item>
   <item>
     <title>Google claims training a machine-learned model to fold third-party content, such as advertisements, into its answers by weighing a learned satisfaction score against predicted interaction with that content</title>
@@ -749,30 +773,6 @@ Emotional Perception AI Ltd v Comptroller-General of Patents, Designs and Trade 
 What it changes: China has arrived at the Federal Circuit's central point from the opposite direction. Applying a known model to a new field is not enough in either country. For a family filed in the United States, Europe and China, the model architecture and the training description have to sit in the priority document, because none of the three offices will let that material be added afterwards.
 
 Amended Patent Examination Guidelines, China National Intellectual Property Administration Order No. 84, issued 10 November 2025, effective 1 January 2026</description>
-  </item>
-  <item>
-    <title>The examination manual now lists improving how a machine learning model trains as an improvement to technology</title>
-    <link>https://burbagelaw.com/entries/2025-12-05-examination-manual-now-lists-improving-how-machine-l.html</link>
-    <guid isPermaLink="true">https://burbagelaw.com/entries/2025-12-05-examination-manual-now-lists-improving-how-machine-l.html</guid>
-    <pubDate>Fri, 05 Dec 2025 12:00:00 +0000</pubDate>
-    <category>USPTO</category>
-    <description>The United States Patent and Trademark Office revised Sections 2106.04(d), 2106.05(a) and 2106.05(f) of the Manual of Patent Examining Procedure to incorporate Ex parte Desjardins, the Appeals Review Panel decision of September 26, 2025 designated precedential on November 4, 2025. Section 2106.05(a) adds two examples of technological improvements: "An improved way of training a machine learning model that protected the model's knowledge about previous tasks" and "Improvements to computer component or system performance based upon adjustments to parameters of a machine learning model." Section 2106.04(d) now summarizes Desjardins, where a claim to training a model on a series of tasks recited a mathematical concept but integrated it into a practical application because the specification described improvements to how the model operates, including overcoming catastrophic forgetting. Examiners are told not to evaluate claims "at such a high level of generality" that technical limitations are dismissed, nor to dismiss elements as generic computer components without considering whether they provide an improvement, and that "the claim must include the components or steps of the invention that provide the improvement described in the specification," though it need not recite the improvement. The Director's December 4 memorandum on Subject Matter Eligibility Declarations requires examiners to weigh on its merits an optional declaration under 37 C.F.R. 1.132 offering expert testimony or objective data on a technological improvement.
-
-What it changes: Every response to an eligibility rejection of a machine learning claim under Section 101 of Title 35 of the United States Code should now cite Section 2106.05(a) examples xiii and xiv and the Desjardins paragraph in Section 2106.04(d), because the manual binds the examiner in a way an argument from a single Appeals Review Panel decision did not. The drafting rule is stated in the manual's own words: the specification has to describe the improvement to how the model trains or runs, and the claim has to contain the steps that produce it. That is the line between Desjardins and Recentive Analytics v. Fox, where applying a generic model to a new data environment was abstract. The declaration route rewards keeping evidence in the invention record, such as ablation results, memory and latency measurements and benchmark comparisons, because a declaration can prove an improvement the specification describes but cannot add one it omits. The manual governs examiners only; courts apply Recentive.
-
-Memorandum, "Advance notice of change to the MPEP in light of Ex Parte Desjardins" (Dec. 5, 2025), from Charles Kim, Deputy Commissioner for Patents, to the Patent Examining Corps; Memorandum, "Subject Matter Eligibility Declarations" (Dec. 4, 2025), from John A. Squires, Under Secretary of Commerce for Intellectual Property and Director of the United States Patent and Trademark Office, to the Patent Examining Corps</description>
-  </item>
-  <item>
-    <title>USPTO rescinds the 2024 inventorship guidance and treats artificial intelligence as a tool only</title>
-    <link>https://burbagelaw.com/entries/2025-11-28-uspto-rescinds-2024-inventorship-guidance-treats-art.html</link>
-    <guid isPermaLink="true">https://burbagelaw.com/entries/2025-11-28-uspto-rescinds-2024-inventorship-guidance-treats-art.html</guid>
-    <pubDate>Fri, 28 Nov 2025 12:00:00 +0000</pubDate>
-    <category>USPTO</category>
-    <description>The USPTO withdrew its February 2024 guidance on artificial-intelligence-assisted inventions and replaced it with guidance treating artificial intelligence systems as tools rather than as candidate joint inventors. The Office stated that the Pannu joint-inventorship factors apply only among natural persons and cannot be extended to an artificial intelligence system, and directed examiners to apply the ordinary inventorship standard without a separate pathway for applications involving artificial intelligence.
-
-What it changes: Thaler v. Vidal still controls: every named inventor must be a natural person. The practical change is that inventorship questionnaires no longer need a separate significant-contribution analysis for the model itself; they need a record of which human made the conception decisions the claims rest on.
-
-Revised Inventorship Guidance for AI-Assisted Inventions, 90 Fed. Reg. 54636 (Nov. 28, 2025), rescinding 89 Fed. Reg. 10043 (Feb. 13, 2024)</description>
   </item>
 </channel>
 </rss>
