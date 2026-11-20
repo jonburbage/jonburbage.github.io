@@ -9,6 +9,36 @@
   <lastBuildDate>Mon, 16 Nov 2026 12:00:00 +0000</lastBuildDate>
   <image><url>https://burbagelaw.com/og-card.png</url><title>Burbage Law — Developments</title><link>https://burbagelaw.com/updates.html</link></image>
   <item>
+    <title>Big-company AI patent publications rose 49% from a year earlier, and OpenAI’s more than tripled</title>
+    <link>https://burbagelaw.com/data/2026-11-20-openai-ai-publications-triple.html</link>
+    <guid isPermaLink="true">https://burbagelaw.com/data/2026-11-20-openai-ai-publications-triple.html</guid>
+    <pubDate>Fri, 20 Nov 2026 12:00:00 +0000</pubDate>
+    <category>Data</category>
+    <description>AI-related U.S. applications published from August 27 to November 19, 2026 that name OpenAI, Anthropic, Alphabet, Microsoft, Nvidia, Meta, Amazon or Apple as first applicant, against the same 13 weeks of 2025.
+
+The eight large AI companies this series follows published 1,116 AI-related U.S. patent applications in the 13 weekly publication dates from August 27 to November 19, 2026, against 751 in the same weeks of 2025, a rise of 49%. Alphabet went from 241 to 408, Nvidia from 131 to 240 and Microsoft from 209 to 266. Apple rose from 98 to 112. OpenAI went from 12 to 39, more than three times its count a year earlier.
+
+That is roughly the pace of the field. Publications classified in G06N, the class usually used to count AI patents, rose 48% over the same weeks, from 4,064 to 5,998, while all published utility applications rose 34%. The big filers are growing with the class, not pulling away from it.
+
+Edition 1 counted the same eight companies in the 13 weeks ending October 8. That window shares seven weeks with this one, so the two are not independent, but the direction holds. The eight together went from 950 to 1,116, Microsoft from 213 to 266, Apple from 81 to 112 and OpenAI from 24 to 39. Amazon held at 31. Meta and Anthropic publish too few AI-related applications for their movements to mean much.
+
+Continuations and divisionals account for 188 of the 365 additional publications: 431 this year against 243. Nvidia’s went from 41 to 119, spread across 117 different parent applications rather than one family. National stage entries of international applications rose from 40 to 141, mostly Alphabet’s (29 to 114). Edition 6 looked at Alphabet’s national stage jump and could not find its cause.
+
+Titles that name an agent or an agentic system rose from 27 to 56. Seven of last year’s 27 were Anthropic applications published on a single day, September 25, 2025; for the other seven companies the rise is from 20 to 56. Microsoft has 22 this year, Alphabet 19 and Nvidia 9.
+
+OpenAI did not change how it publishes. Each of its 37 publications with a 2025 priority date came out 18.0 to 18.4 months after that date, the ordinary schedule under 35 U.S.C. 122(b), and none came out early. What changed is how much it filed 18 months ago: 36 of the 39 trace to first filings made in March, April and May 2025. Last year’s 12 traced mostly (10 of 12) to filings made in February and May 2024.
+
+Of the 39, 18 claim a U.S. provisional, 12 are continuations and 9 claim no earlier application. Polsinelli PC is the firm in the correspondence address on 32, Keller Preece PLLC on 5 and Finnegan on 2. They name 110 different inventors, against 28 on last year’s 12. The largest week, October 8, held 11, and three publication dates (October 8, November 5 and November 19) held 24 of the 39. The subjects track OpenAI’s products. Six published on November 19 concern automated software development with a “generative response engine,” and others cover real-time voice with interruption detection, a memory platform, safety classifiers for audio output and monitoring a model’s chain of thought for reward hacking.
+
+My reading is that this is a filing decision made in early 2025 now surfacing on the 18-month clock. OpenAI has not said why it filed more that spring, and the cause is not known. Its published patent policy pledges to use its patents only defensively, unless a party threatens or sues it, helps others do so, or otherwise harms it or its users.
+
+Across the six companies with at least 20 AI-related publications, 510 of 1,096, or 47%, carry no G06N code. They sit in language processing (G06F 40), vision (G06V) or speech (G10L), or count as AI-related by their titles. For Apple the share is 81%, for OpenAI 67%. Edition 1 found 44% across seven companies.
+
+It would be easy to read a tripled count as a company that started patenting this fall. I think that gets the timing wrong, and the timing matters. A published application is prior art for what its earlier filing describes as of that earlier filing date, not its publication date, under 35 U.S.C. 102(a)(2) and 102(d). For most of OpenAI’s 39, that date is in spring 2025. If you are prosecuting an application on coding agents, voice assistants or model monitoring with a later priority date, expect these publications to start appearing in office actions. OpenAI’s defensive pledge does not change that; it limits how OpenAI says it will enforce its patents, not what its publications disclose.
+
+The same clock means an application first filed after about May 2025 that claims no earlier date is generally still unpublished, unless its applicant asked for early publication. If you commission a novelty search on agent or coding-assistant technology before filing, consider that it cannot reach those applications, and weigh that gap in the filing decision the search supports. When performing a search, search by class, not by keywords alone, and include G06F 40, G06V and G10L along with G06N: G06N alone would have missed 47% of these publications.</description>
+  </item>
+  <item>
     <title>Seven in ten big-company AI applications published since late August have no examiner yet</title>
     <link>https://burbagelaw.com/data/2026-11-13-ai-applications-waiting-for-an-examiner.html</link>
     <guid isPermaLink="true">https://burbagelaw.com/data/2026-11-13-ai-applications-waiting-for-an-examiner.html</guid>
