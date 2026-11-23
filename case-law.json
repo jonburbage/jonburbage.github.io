@@ -1,7 +1,34 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "note": "Developments in United States, European and Asian patent law affecting software and artificial intelligence inventions, together with the regulation and policy that shapes what clients can build and ship. Newest first.",
   "entries": [
+    {
+      "date": "2026-11-23",
+      "tag": "Filings",
+      "court": false,
+      "title": "OpenAI filed a provisional application the day before it announced Codex, then six applications on the agent within five months",
+      "cite": "United States Patent Application Publication Nos. 2026/0367886 A1 (Application No. 19/324,967, filed September 10, 2025), 2026/0367910 A1 (Application No. 19/324,924, filed September 10, 2025), 2026/0367911 A1 (Application No. 19/326,386, filed September 11, 2025), 2026/0367887 A1 (Application No. 19/327,902, filed September 12, 2025), 2026/0367891 A1 (Application No. 19/327,864, filed September 12, 2025) and 2026/0367888 A1 (Application No. 19/351,746, filed October 7, 2025), OpenAI OpCo, LLC, all claiming priority to United States Provisional Patent Application No. 63/806,537, filed May 15, 2025, all published November 19, 2026; OpenAI, \"Introducing Codex,\" May 16, 2025",
+      "summary": "OpenAI announced Codex, a cloud agent that works on software tasks in parallel, each in an isolated environment, on May 16, 2025. The six applications published on November 19 all claim priority to a provisional application filed on May 15, 2025, the day before, and they divide the agent into six claimed features. Publication No. 2026/0367886 disables a container's network interface after the repository's packages are retrieved; No. 2026/0367887 removes the user's secrets from the container before the model is given access; No. 2026/0367910 generates a diff of the model's changes with a deterministic application and then a change proposal; No. 2026/0367911 identifies citation tokens that refer to events the model performed and sends a summary of its actions to the client device; No. 2026/0367891 retrieves packages to build a target \"based on a type of the agentic software development task,\" and its claim 2 names a development task and a code query request as the types; and No. 2026/0367888 updates a task list in the front end to add each new task and its current status. The announcement said that at launch internet access was disabled during task execution, that Codex \"provides verifiable evidence of its actions through citations of terminal logs and test outputs,\" and that it could propose pull requests for review; it said nothing about how secrets are handled. The USPTO's Open Data Portal shows all six ready for examination.",
+      "takeaway": "The order of the dates is the lesson here. The provisional, filed the day before the announcement, already describes cutting the container's network once setup is complete, saying the system \"programmatically disables all outbound network connectivity from that container,\" and it confines credentials to \"the narrow setup window.\" For claims the provisional supports, the announcement is not prior art against those claims at all. For anything it does not support, the September and October 2025 filing dates control: in the United States the announcement would then fall within the one-year grace period of 35 U.S.C. \u00a7 102(b)(1)(A), so long as it is shown to disclose the inventors' own work, but Europe has no general grace period, and a European application that cannot validly claim the provisional's date for a feature would face the announcement as prior art. When a launch date is fixed, consider filing the provisional before the announcement and describing in it every feature the announcement will describe, because what the provisional describes, not only its date, decides what the later applications can claim with that date.",
+      "topics": [
+        "filings",
+        "prior-art",
+        "program"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "tag": "Filings",
+      "court": false,
+      "title": "OpenAI claims cutting a coding agent's network once its packages are retrieved, and removing the user's secrets before the model gets the container",
+      "cite": "United States Patent Application Publication Nos. 2026/0367886 A1, \"Isolation of Automated Software Development with Generative Response Engines,\" Application No. 19/324,967, filed September 10, 2025, and 2026/0367887 A1, \"Secret Management in Automated Software Development with Generative Response Engine,\" Application No. 19/327,902, filed September 12, 2025, OpenAI OpCo, LLC, both claiming priority to United States Provisional Patent Application No. 63/806,537, filed May 15, 2025, both published November 19, 2026",
+      "summary": "Claim 1 of Publication No. 2026/0367886 has three steps: start a container for an agentic software development task, holding a service that interacts with an AI model through an internal interface and a network interface for reaching a public network; after the container starts, retrieve the packages the repository identifies to build its build target; and after the packages are retrieved, disable the network interface. Claim 4 then gives the model access to the container's service through the internal interface, and claim 7 runs the user's own instructions in the startup script before the instruction that disables or limits the network interface. Claim 1 of Publication No. 2026/0367887 starts the container with a command to store the user's secrets in its file system and removes them before the model is given access through the service; claim 2 decrypts those secrets from the project's encrypted information with the project's private key.",
+      "takeaway": "Claim 1 of the isolation application recites an order of operations, not how the isolation is achieved, and it does not tie the network cutoff to the moment the model gets access; only claim 4 does. My reading is that novelty will turn on whether that order of steps was known before the effective filing date, which is May 15, 2025 if the provisional supports the claim, as its description of the network cutoff suggests, and September 10, 2025 if it does not. Claim 7, the user's own instructions running before the network is disabled or limited, is the narrower position within that application; the secrets application claims a different step and stands or falls on its own art. As I read the two, the secrets claim is the better drafted, because its independent claim ties the isolation step to the moment the model is let in. If you are drafting claims on a sandbox for an agent, consider putting that tie to the model into the independent claim.",
+      "topics": [
+        "filings",
+        "prior-art"
+      ]
+    },
     {
       "date": "2026-11-16",
       "tag": "Filings",
